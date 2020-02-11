@@ -21,6 +21,17 @@ img {
   max-width: 100%;
 }
 
+.hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 .list-point-none {
   list-style-type: none;
   padding-left: 0px;
@@ -64,7 +75,7 @@ img {
   display: flex;
 }
 
-.logo{
+.logo {
   width: 100px;
   max-width: 100px;
   height: 52px;
@@ -85,10 +96,6 @@ img {
   justify-content: space-between;
 }
 
-.list-item {
- 
-}
-
 .header-link {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -103,11 +110,10 @@ img {
   font-weight: bold;
 }
 
-.list-contact{
+.list-contact {
   display: flex;
   width: 136px;
   justify-content: space-between;
-
 }
 
 /* title */

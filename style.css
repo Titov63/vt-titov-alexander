@@ -60,3 +60,43 @@
   line-height: 32px;
   color: #1e0606;
 }
+
+.poster-div_list {
+  display: flex;
+  max-height: 372px;
+}
+
+.poster {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  max-height: 500px;
+}
+
+.num{
+
+
+}
+
+.poster-slid {
+  margin-left: 28px;
+}
+
+.poster-div_title {
+  display: flex;
+  flex-direction: column;
+  margin-left: 44px;
+  width: 307px;
+  max-width: 307px;
+}
+
+.poster-img {
+  display: flex;
+  margin-left: 5px;
+  max-width: 635.49px;
+}
+
+.poster-div {
+  display: flex;
+  min-height: 39px;
+}
