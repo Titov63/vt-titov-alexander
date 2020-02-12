@@ -21,6 +21,11 @@ img {
   max-width: 100%;
 }
 
+.flex {
+  display: flex;
+  margin: 0px;
+}
+
 .hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -59,9 +64,15 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   background: #000000;
+  display: flex;
+  width: 161px;
+  height: 40px;
+  justify-content: center;
+  padding: 9px 22px;
 }
 
 .container {
+  display: flex;
   width: 100%;
   max-width: 1180px;
   margin: 0 auto;
@@ -126,6 +137,7 @@ img {
   line-height: 46px;
   text-transform: uppercase;
   color: #1e0606;
+  margin: 0px;
 }
 
 .title-h2 {
@@ -147,11 +159,16 @@ img {
   font-size: 16px;
   line-height: 22px;
   color: #1e0606;
+  margin: 0px;
 }
 
 /* footer */
 
 .footer {
+  flex-direction: column;
+  margin-top: 60px;
+  width: 1400px;
+  height: 555px;
   background: #434343;
 }
 
@@ -171,8 +188,52 @@ img {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
+
+  margin-top: 15px;
 }
 
 .design-title {
   color: #a2a2a2;
+}
+.footer-nav {
+  display: flex;
+}
+
+.navigation {
+  margin: 0px;
+  width: 380px;
+  height: 281px;
+}
+
+.customer {
+  margin: 0px;
+  width: 380px;
+  height: 281px;
+}
+
+.connect {
+  width: 380px;
+  height: 166px;
+}
+
+.input-sub {
+  display: flex;
+  margin-top: 49px;
+  max-height: 40px;
+}
+
+.button-join{
+  width: 81px;
+
+
+}
+
+.social {
+  display: flex;
+  margin: 0px;
+}
+
+.develop {
+  display: flex;
+  
 }

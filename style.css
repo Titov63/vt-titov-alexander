@@ -5,6 +5,8 @@
   font-size: 40px;
   line-height: 110%;
   color: #1e0606;
+  margin-top: 89px;
+  margin-bottom: 0px;
 }
 
 .made-in {
@@ -59,6 +61,7 @@
   font-size: 26px;
   line-height: 32px;
   color: #1e0606;
+  margin: 10px 0px 0px 0px;
 }
 
 .poster-div_list {
@@ -71,11 +74,6 @@
   flex-direction: column;
   margin-top: 40px;
   max-height: 500px;
-}
-
-.num{
-
-
 }
 
 .poster-slid {
@@ -98,5 +96,154 @@
 
 .poster-div {
   display: flex;
+
   min-height: 39px;
+  justify-content: center;
+  align-items: center;
 }
+
+.made-in {
+  margin-top: 20px;
+  min-width: 151.12px;
+  min-height: 26px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+
+.category-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0px 0px 0px;
+}
+
+.product {
+  width: 280px;
+  height: 270px;
+}
+
+.slid-product {
+  display: flex;
+  margin-top: 30px;
+  max-width: 640px;
+  height: auto;
+}
+
+.slid {
+  width: 37px;
+  height: 37px;
+  margin: 3px 0px 4px 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+.slid-2 {
+  margin-left: 6px;
+}
+
+.marketing-text {
+  margin-left: 20px;
+}
+
+.info {
+  margin-top: 90px;
+  height: 559px;
+}
+.info-img {
+  width: 480px;
+  height: 559px;
+  justify-content: space-around;
+}
+
+.info-nav {
+  width: 540px;
+  height: 472px;
+  padding-left: 60px;
+  margin: 30px 0px 57px 60px;
+}
+
+.info-list {
+  margin-top: 17px;
+  margin-bottom: 0px;
+}
+
+.list-category {
+  margin-top: 22px;
+}
+
+.format-info_1 {
+  margin-top: 30px;
+  width: 480px;
+  height: 66px;
+}
+
+.format-info_2 {
+  margin-top: 15px;
+  width: 480px;
+  height: 88px;
+}
+
+.button_more {
+  margin-top: 26px;
+  width: 149px;
+  height: 40px;
+}
+
+.sponsors {
+  margin-top: 90px;
+}
+
+.sponsor-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sponsor-list_item {
+  display: block;
+}
+
+.about-us_map {
+  margin-top: 90px;
+}
+
+.about-us {
+  padding-left: 30px;
+  width: 543px;
+  height: 262px;
+}
+
+.about-us-text {
+  margin-top: 10px;
+  width: 483px;
+  height: 67px;
+}
+
+.button_buy {
+  margin-top: 20px;
+  width: 123px;
+  height: 40px;
+}
+.contacts {
+  margin-left: 57px;
+  padding-left: 30px;
+  width: 543px;
+  height: 349px;
+}
+
+.contacts-text {
+  margin-top: 20px;
+  width: 483px;
+  height: 66px;
+}
+
+.contacts-map{
+  display: block;
+  margin-top: 20px;
+  width: 483px;
+  height: 196px;
+
+}
+
