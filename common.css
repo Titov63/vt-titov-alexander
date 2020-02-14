@@ -83,7 +83,7 @@ img {
 .header {
   margin: 50px auto 40px;
   max-width: 1177px;
-  display: flex;
+  
 }
 
 .logo {
@@ -95,6 +95,7 @@ img {
 .header-nav {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 

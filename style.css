@@ -18,17 +18,6 @@
   color: #1e0606;
 }
 
-.poster-div {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: #c29974;
-}
-
 .product-title {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -61,43 +50,63 @@
   font-size: 26px;
   line-height: 32px;
   color: #1e0606;
-  margin: 10px 0px 0px 0px;
 }
 
 .poster-div_list {
   display: flex;
-  max-height: 372px;
 }
 
 .poster {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
-  max-height: 500px;
 }
 
+.poster-div {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #c29974;
+}
 .poster-slid {
-  margin-left: 28px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 31px;
+}
+
+.num {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 73px;
+  color: rgba(30, 6, 6, 0.05);
+}
+
+.line {
+  width: 31px;
+  height: 3px;
+  margin-top: 10px;
+  background: #d6cac2;
+  border: 0px;
 }
 
 .poster-div_title {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin-left: 44px;
   width: 307px;
   max-width: 307px;
 }
 
-.poster-img {
-  display: flex;
-  margin-left: 5px;
-  max-width: 635.49px;
-}
-
 .poster-div {
   display: flex;
 
-  min-height: 39px;
   justify-content: center;
   align-items: center;
 }
@@ -105,7 +114,6 @@
 .made-in {
   margin-top: 20px;
   min-width: 151.12px;
-  min-height: 26px;
 }
 
 .category {
@@ -117,19 +125,16 @@
 .category-list {
   display: flex;
   justify-content: space-between;
-  margin: 30px 0px 0px 0px;
 }
 
 .product {
   width: 280px;
-  height: 270px;
 }
 
 .slid-product {
   display: flex;
   margin-top: 30px;
   max-width: 640px;
-  height: auto;
 }
 
 .slid {
@@ -150,19 +155,15 @@
 
 .info {
   margin-top: 90px;
-  height: 559px;
 }
 .info-img {
   width: 480px;
-  height: 559px;
-  justify-content: space-around;
 }
 
 .info-nav {
   width: 540px;
-  height: 472px;
+
   padding-left: 60px;
-  margin: 30px 0px 57px 60px;
 }
 
 .info-list {
@@ -177,19 +178,16 @@
 .format-info_1 {
   margin-top: 30px;
   width: 480px;
-  height: 66px;
 }
 
 .format-info_2 {
   margin-top: 15px;
   width: 480px;
-  height: 88px;
 }
 
 .button_more {
   margin-top: 26px;
   width: 149px;
-  height: 40px;
 }
 
 .sponsors {
@@ -212,38 +210,30 @@
 .about-us {
   padding-left: 30px;
   width: 543px;
-  height: 262px;
 }
 
 .about-us-text {
   margin-top: 10px;
   width: 483px;
-  height: 67px;
 }
 
 .button_buy {
   margin-top: 20px;
   width: 123px;
-  height: 40px;
 }
 .contacts {
   margin-left: 57px;
   padding-left: 30px;
   width: 543px;
-  height: 349px;
 }
 
 .contacts-text {
   margin-top: 20px;
   width: 483px;
-  height: 66px;
 }
 
-.contacts-map{
+.contacts-map {
   display: block;
   margin-top: 20px;
   width: 483px;
-  height: 196px;
-
 }
-
