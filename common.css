@@ -1,6 +1,14 @@
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
+  
+}
+
+.main{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap-reverse;
+
 }
 
 a {
@@ -21,11 +29,6 @@ img {
   max-width: 100%;
 }
 
-.flex {
-  display: flex;
-  margin: 0px;
-}
-
 .hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -35,6 +38,12 @@ img {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+.container {
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .list-point-none {
@@ -63,33 +72,27 @@ img {
   line-height: 22px;
   text-transform: uppercase;
   color: #ffffff;
-  background: #000000;
-  display: flex;
-  width: 161px;
-  height: 40px;
-  justify-content: center;
+  background-color: #000000;
   padding: 9px 22px;
-}
+  display: block;
+  align-items: baseline;
 
-.container {
-  display: flex;
-  width: 100%;
-  max-width: 1180px;
-  margin: 0 auto;
+  
 }
 
 /* header */
 
 .header {
-  margin: 50px auto 40px;
-  max-width: 1177px;
-  
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 40px;
 }
 
 .logo {
   width: 100px;
-  max-width: 100px;
+  min-width: 100px;
   height: 52px;
+
 }
 
 .header-nav {
@@ -101,9 +104,7 @@ img {
 
 .list-links {
   display: flex;
-  width: 210px;
-  height: 20px;
-  padding: 0px;
+  flex-wrap: wrap;
   margin-left: 60px;
   justify-content: space-between;
 }
@@ -116,16 +117,23 @@ img {
   line-height: 19px;
   text-transform: uppercase;
   color: #1e0606;
+
+  margin-right: 20px;
 }
 
-.header-link_bolt {
+.header-link-bold {
   font-weight: bold;
 }
 
 .list-contact {
   display: flex;
-  width: 136px;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.header-search{
+margin-right: 24px;
+
 }
 
 /* title */
@@ -169,8 +177,6 @@ img {
   flex-direction: column;
   margin-top: 60px;
   width: 1400px;
-  height: 555px;
-  background: #434343;
 }
 
 .footer-title {
@@ -203,30 +209,24 @@ img {
 .navigation {
   margin: 0px;
   width: 380px;
-  height: 281px;
 }
 
 .customer {
   margin: 0px;
   width: 380px;
-  height: 281px;
 }
 
 .connect {
   width: 380px;
-  height: 166px;
 }
 
 .input-sub {
   display: flex;
   margin-top: 49px;
-  max-height: 40px;
 }
 
-.button-join{
+.button-join {
   width: 81px;
-
-
 }
 
 .social {
@@ -236,5 +236,4 @@ img {
 
 .develop {
   display: flex;
-  
 }

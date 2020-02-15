@@ -13,25 +13,27 @@
 </head>
 
 <body>
+  
   <header class="header container">
     <a><img class="logo" src="/images/logo.svg" alt="logo"></a>
     <nav class="header-nav">
       <ul class="list-point-none list-links">
-        <li class="list-item"><a class="header-link" href="/pages/blog/index.html">Blog</a></li>
-        <li class="list-item"><a class="header-link" href="/pages/catalog/index.html">Catalog</a></li>
-        <li class="list-item"><a class="header-link" href="#">About Us</a></li>
+        <li><a class="header-link" href="/pages/blog/index.html">Blog</a></li>
+        <li><a class="header-link" href="/pages/catalog/index.html">Catalog</a></li>
+        <li><a class="header-link" href="#">About Us</a></li>
       </ul>
-      <ul class="list-point-none list-contact">
+      <ul class="list-point-none list-links">
         <li><a href="#"><img class="header-search" src="/images/search-icon.svg" alt="search"></a></li>
-        <li><a class="header-link header-link_bolt" href="#">Contact Us</a></li>
+        <li><a class="header-link header-link-bold " href="#">Contact Us</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="poster">
-      <h1 class="hidden">Hidden</h1>
-      <div class="poster-div_list container">
+  <main class="main">
+        
+    <section class="poster container">
+      <span class="poster-img"><img src="/images/poster.png" alt="image-poster" ></span>
+      <div class="poster-div_list">
         <ul class="list-point-none poster-slid">
           <li class="num">01</li>
           <li><button class="line"></button></li>
@@ -42,13 +44,14 @@
         <div class="poster-div_title">
           <h2 class="title-poster">THE OOH NOO COLLECTION</h2>
           <p class="made-in">Designed in Slovenia</p>
-          <a class=" button" href="#">EXPLORE NOW</a>
+          <a class="button button-explore" href="#">EXPLORE NOW</a>
         </div>
-        <img src="/images/poster.png" alt="image-poster" class="poster-img">
+        
       </div>
-      <div class="poster-div container">
+      <div class="poster-div">
         Free (continental) USA shipping on all orders of $100 USD or more!
       </div>
+      
     </section>
 
     <section class="category container">
@@ -122,6 +125,7 @@
       </a>
     </section>
     <section class="container about-us_map">
+      <h2 class="hidden">h</h2>
       <article class="about-us">
         <h2 class="title-h3">Design Life Kids</h2>
         <h3 class="about-us_subtitle">About Us</h3>
@@ -180,9 +184,9 @@
         <span></span>
         <h4 class="footer-title">Connect</h4>
         <div class="input-sub">
-          <form action="https://form-data-dl.herokuapp.com/api/messages" method="post"></form>
-          <input class="form-input" type="email" name="email" id="form-input" placeholder="Email">
-          <button type="submit" class="button button-join">Join</button>
+          <form action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+            <input class="form-input" type="email" name="email" id="form-input" placeholder="Email">
+            <button type="submit" class="button button-join">Join</button>
           </form>
         </div>
 
@@ -226,7 +230,7 @@
 
   </footer>
 
-  <form class="modal-window" action="https://form-data-dl.herokuapp.com/api/messages" method="post">
+  <form class="modal-window" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
     <label class="form-label" for="form-name">Name</label>
     <input class="form-input" type="text" id="form-name" name="name">
     <label class="form-label" for="form-phone">Phone</label>

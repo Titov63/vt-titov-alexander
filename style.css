@@ -1,14 +1,3 @@
-.title-poster {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 110%;
-  color: #1e0606;
-  margin-top: 89px;
-  margin-bottom: 0px;
-}
-
 .made-in {
   font-family: "Crimson Text", serif;
   font-style: italic;
@@ -52,14 +41,23 @@
   color: #1e0606;
 }
 
+/* Poster */
+
 .poster-div_list {
   display: flex;
+  flex-wrap: wrap-reverse;
+  margin-top: 89px;
+  background-color: #eee4db;
+  z-index: 2;
 }
 
 .poster {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+
 }
 
 .poster-div {
@@ -70,12 +68,12 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #ffffff;
-  background: #c29974;
+  background-color: #c29974;
 }
 .poster-slid {
   display: flex;
   flex-direction: column;
-  margin-left: 31px;
+  margin-left: 28px;
 }
 
 .num {
@@ -91,7 +89,8 @@
   width: 31px;
   height: 3px;
   margin-top: 10px;
-  background: #d6cac2;
+  margin-left: 3px;
+  background-color: #d6cac2;
   border: 0px;
 }
 
@@ -99,23 +98,48 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-top: 89px;
+  margin-bottom: 89px;
   margin-left: 44px;
   width: 307px;
-  max-width: 307px;
 }
 
-.poster-div {
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
+.title-poster {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 110%;
+  color: #1e0606;
+  margin: 0px;
 }
 
 .made-in {
   margin-top: 20px;
-  min-width: 151.12px;
 }
 
+.button-explore {
+  width: 161px;
+}
+
+.poster-img {
+  position: absolute;
+  z-index: 3;
+  left: 455px;
+  max-width:635.49px;
+  
+  
+
+ 
+}
+
+.poster-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
 .category {
   display: flex;
   flex-direction: column;
