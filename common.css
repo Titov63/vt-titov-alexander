@@ -1,14 +1,12 @@
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
-  
 }
 
-.main{
-display: flex;
-flex-direction: column;
-flex-wrap: wrap-reverse;
-
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
 }
 
 a {
@@ -76,8 +74,6 @@ img {
   padding: 9px 22px;
   display: block;
   align-items: baseline;
-
-  
 }
 
 /* header */
@@ -92,7 +88,6 @@ img {
   width: 100px;
   min-width: 100px;
   height: 52px;
-
 }
 
 .header-nav {
@@ -131,9 +126,8 @@ img {
   justify-content: space-between;
 }
 
-.header-search{
-margin-right: 24px;
-
+.header-search {
+  margin-right: 24px;
 }
 
 /* title */
@@ -174,18 +168,44 @@ margin-right: 24px;
 /* footer */
 
 .footer {
+  display: flex;
   flex-direction: column;
+  background-color: #434343;
+  margin: 0px auto;
   margin-top: 60px;
   width: 1400px;
+  padding: 100px 110px;
+}
+
+.footer-nav {
+  display: flex;
 }
 
 .footer-title {
+  margin: 0px;
+
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: normal;
   line-height: 22px;
   color: #aaaaaa;
+}
+
+.footer-list {
+  margin-top: 15px;
+}
+
+.footer-line::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 50%;
+
+  transform: rotate(90deg);
+  height: 380px;
+  width: 1px;
+  background-color: #666666;
 }
 
 .footer-text {
@@ -202,11 +222,9 @@ margin-right: 24px;
 .design-title {
   color: #a2a2a2;
 }
-.footer-nav {
-  display: flex;
-}
 
 .navigation {
+  position: relative;
   margin: 0px;
   width: 380px;
 }
