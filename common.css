@@ -72,6 +72,7 @@ img {
   color: #ffffff;
   background-color: #000000;
   padding: 9px 22px;
+  border: 0px;
   display: block;
   align-items: baseline;
 }
@@ -196,15 +197,18 @@ img {
   margin-top: 15px;
 }
 
+.footer-list-line {
+  position: relative;
+  padding-top: 23px;
+  padding-bottom: 13px;
+}
+
 .footer-line::before {
   content: "";
   position: absolute;
-  bottom: 0px;
-  right: 50%;
 
-  transform: rotate(90deg);
-  height: 380px;
-  width: 1px;
+  height: 1px;
+  width: 380px;
   background-color: #666666;
 }
 
@@ -224,23 +228,35 @@ img {
 }
 
 .navigation {
-  position: relative;
   margin: 0px;
   width: 380px;
 }
 
 .customer {
   margin: 0px;
+  margin-left: 20px;
   width: 380px;
 }
 
 .connect {
+  margin-left: 20px;
   width: 380px;
+}
+
+.form-input {
+  background-color: #666666;
+  width: 100%;
+  padding: 0px;
+  border: 0px;
+}
+
+.form-input::placeholder {
+  color:#EBEBEB;
 }
 
 .input-sub {
   display: flex;
-  margin-top: 49px;
+  margin-top: 12px;
 }
 
 .button-join {
