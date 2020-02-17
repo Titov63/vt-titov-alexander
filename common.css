@@ -170,16 +170,19 @@ img {
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   background-color: #434343;
   margin: 0px auto;
   margin-top: 60px;
-  width: 1400px;
-  padding: 100px 110px;
+  width: 100%;
+  max-width: 1400px;
+  padding: 85px 100px;
 }
 
 .footer-nav {
   display: flex;
+  flex-wrap: wrap-reverse;
 }
 
 .footer-title {
@@ -212,6 +215,15 @@ img {
   background-color: #666666;
 }
 
+.footer-line-long::before {
+  content: "";
+  position: absolute;
+
+  height: 1px;
+  width: 400px;
+  background-color: #666666;
+}
+
 .footer-text {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -220,27 +232,42 @@ img {
   line-height: 22px;
   color: #ffffff;
 
-  margin-top: 15px;
-}
-
-.design-title {
-  color: #a2a2a2;
+  margin: 0px;
 }
 
 .navigation {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin: 0px;
+  margin-left: 20px;
+  margin-top: 30px;
   width: 380px;
 }
 
 .customer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin: 0px;
   margin-left: 20px;
+  margin-top: 30px;
   width: 380px;
 }
 
 .connect {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
   margin-left: 20px;
+  margin-top: 30px;
   width: 380px;
+  min-height: 243px;
+}
+
+.rating {
+  margin-right: 25px;
 }
 
 .form-input {
@@ -251,11 +278,13 @@ img {
 }
 
 .form-input::placeholder {
-  color:#EBEBEB;
+  padding-left: 10px;
+  color: #ebebeb;
 }
 
 .input-sub {
   display: flex;
+
   margin-top: 12px;
 }
 
@@ -265,9 +294,46 @@ img {
 
 .social {
   display: flex;
-  margin: 0px;
+
+  margin-top: 25px;
+}
+
+.social-list {
+  margin-right: 10px;
 }
 
 .develop {
   display: flex;
+  align-items: center;
+}
+
+.star-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.star-item {
+  width: 14px;
+  margin-right: 2.88px;
+}
+
+.star-icon {
+  margin: 0px;
+}
+
+.tm {
+  margin: 0;
+}
+
+.design-title {
+  display: block;
+  margin-top: 28px;
+  color: #a2a2a2;
+}
+
+.design-name {
+  position: absolute;
+  bottom: 4px;
 }
