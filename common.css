@@ -96,13 +96,23 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-left: 40px;
 }
 
 .list-links {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 60px;
   justify-content: space-between;
+  
+}
+
+.list-link {
+  display: flex;
+  flex-wrap: wrap;
+  
+  justify-content: space-between;
+  width: 134px;
+  
 }
 
 .header-link {
@@ -114,11 +124,13 @@ img {
   text-transform: uppercase;
   color: #1e0606;
 
-  margin-right: 20px;
+  margin-left: 20px;
+
 }
 
 .header-link-bold {
   font-weight: bold;
+  margin: 0px;
 }
 
 .list-contact {
@@ -127,9 +139,7 @@ img {
   justify-content: space-between;
 }
 
-.header-search {
-  margin-right: 24px;
-}
+
 
 /* title */
 
