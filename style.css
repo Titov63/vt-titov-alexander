@@ -461,21 +461,19 @@
 }
 
 .modal-window {
-  position: fixed;
-
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 680px;
   background-color: #e5eaf8;
-  padding: 40px 42px;
+  padding: 43px 40px;
+  margin: 113px 492px 290px;
 }
 
 .modal-label {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1px;
 }
 
 .data {
@@ -504,6 +502,13 @@
   color: black;
 
   margin-bottom: 6px;
+}
+
+.form-textarea{
+width: 600px;
+height: 150px;
+resize: none;
+
 }
 
 .modal-consent {
@@ -543,13 +548,34 @@
 }
 
 .modal-close {
-  position: fixed;
-  background-color: rgba(125, 151, 218, 0.0);
-  color: white;
+  position: absolute;
+  background: none;
+  top: 2px;
+  right: -23px;
+  padding: 0px 3px;
   width: 15px;
   height: 15px;
   border: 0px;
-  top: 261px;
-  right: 349px;
-  
+}
+
+.modal-close::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+
+  transform: rotate(45deg);
+  height: 20px;
+  width: 2px;
+  background-color: white;
+}
+
+.modal-close::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+
+  transform: rotate(-45deg);
+  height: 20px;
+  width: 2px;
+  background-color: white;
 }
