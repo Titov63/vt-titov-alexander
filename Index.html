@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Design life Kids</title>
   <link
-    href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700i%7CMontserrat:400,700%7COpen+Sans:400,700%7CRoboto&display=swap"
+    href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700i%7CMontserrat:400,700%7COpen+Sans:400,700%7CRoboto:400,700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="/common.css">
@@ -24,7 +24,7 @@
       </ul>
       <ul class="list-point-none list-link">
         <li><a href="#"><img class="header-search" src="/images/search-icon.svg" alt="search"></a></li>
-        <li><a class="header-link header-link-bold " href="#">Contact Us</a></li>
+        <li class="contact-us"><a class="header-link header-link-bold " href="#">Contact Us</a></li>
       </ul>
     </nav>
   </header>
@@ -35,10 +35,10 @@
       <div class="poster-div_list">
         <div class="poster-slid">
           <span class="num">01</span>
-          <button class="line line-activ"></button></li>
-          <button class="line"></button></span>
-          <button class="line"></button></span>
-          <button class="line"></button></span>
+          <button class="line line-activ"></button>
+          <button class="line"></button>
+          <button class="line"></button>
+          <button class="line"></button>
         </div>
         <div class="poster-div_title">
           <h2 class="title-poster">THE OOH NOO COLLECTION</h2>
@@ -239,24 +239,47 @@
       </div>
     </div>
 
-    </div>
+
 
   </footer>
 
-  <form class="modal-window" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
-    <label class="form-label" for="form-name">Name</label>
-    <input class="form-input" type="text" id="form-name" name="name">
-    <label class="form-label" for="form-phone">Phone</label>
-    <input class="form-input" type="tel" id="form-phone" name="phone">
-    <label class="form-label" for="form-email">Email</label>
-    <input class="form-input" type="email" id="form-email" name="email">
-    <label class="form-label" for="form-message">Message</label>
-    <textarea class="form-textarea" name="message" id="form-message"></textarea>
-    <input class="form-checkbox" type="checkbox" name="accept">By clicking on the button, you consent to the processing
-    of your personal data
-    <button class="form-submit" type="submit">Submit</button>
-    <button class="form-close" type="button">x</button>
-  </form>
+  <div class="modal-background">
+    <form class="modal-window" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+
+      <label class="modal-label">
+        <span class="lable-text">Name</span>
+        <input class="long-input" type="text" name="name">
+      </label>
+
+      <div class="data">
+        <label class="modal-label">
+          <span class="lable-text">Phone</span>
+          <input class="short-input" type="tel" name="phone">
+        </label>
+
+        <label class="modal-label">
+          <span class="lable-text">Email</span>
+          <input class="short-input" type="email" name="email">
+        </label>
+
+      </div>
+      <label class="modal-label">
+        <span class="lable-text">Message</span>
+        <textarea class="form-textarea" name="message"></textarea>
+      </label>
+
+      <label class="modal-consent">
+        <input class="modal-checkbox" type="checkbox" name="accept">
+        <span class="text-consent">By clicking on the button, you consent to the
+          processing of your personal data</span>
+      </label>
+      <button class="modal-submit" type="submit">Submit</button>
+    </form>
+    <button class="modal-close" type="button">X</button>
+  </div>
+
+
+
 
 </body>
 

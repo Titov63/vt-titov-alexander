@@ -79,6 +79,10 @@ img {
 
 /* header */
 
+.contact-us {
+  width: 90px;
+}
+
 .header {
   display: flex;
   padding-top: 50px;
