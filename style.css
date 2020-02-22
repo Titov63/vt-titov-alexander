@@ -35,7 +35,6 @@
   left: 48px;
   display: flex;
   flex-direction: column;
-  
 }
 
 .num {
@@ -54,18 +53,16 @@
   margin-left: 3px;
   background-color: #d6cac2;
   border: 0px;
-  padding:0px;
+  padding: 0px;
 }
 
-.line:hover{
+.line:hover {
   cursor: pointer;
-
 }
 
-.line-activ{
+.line-activ {
   margin-top: 10px;
   background-color: rgba(30, 6, 6, 0.6);
-
 }
 
 .poster-div_title {
@@ -106,15 +103,13 @@
 }
 
 .poster-img {
-  
-    position: absolute;
-    min-width: 300px;
+  position: absolute;
+  min-width: 300px;
   bottom: 36px;
   z-index: 3;
   left: 465px;
   max-width: 635.49px;
 }
-
 
 .poster-div {
   display: flex;
@@ -136,6 +131,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 20px;
+  margin-right: -10px;
+}
+
+.product-list {
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .product-item-1 {
@@ -191,11 +192,6 @@
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
 }
 
-.product-list {
-  margin-top: 10px;
-  margin-right: 10px;
-}
-
 .slid-product {
   display: flex;
   margin-top: 30px;
@@ -219,12 +215,12 @@
 .left::before {
   content: "";
   position: absolute;
-  top: 0px;
-  left: 40%;
+  top: 2px;
+  left: 17.5px;
 
-  transform: rotate(50deg);
+  transform: rotate(45deg);
 
-  height: 65%;
+  height: 21px;
   width: 4px;
   background-color: #1e0606;
 }
@@ -232,12 +228,11 @@
 .left::after {
   content: "";
   position: absolute;
-  bottom: 0px;
-  left: 40%;
+  bottom: 2px;
+  left: 17.5px;
+  transform: rotate(133deg);
 
-  transform: rotate(130deg);
-
-  height: 65%;
+  height: 21px;
   width: 4px;
   background-color: #1e0606;
 }
@@ -249,12 +244,12 @@
 .right::before {
   content: "";
   position: absolute;
-  top: 0px;
-  right: 40%;
+  top: 2px;
+  left: 17.5px;
 
-  transform: rotate(-50deg);
+  transform: rotate(-45deg);
 
-  height: 65%;
+  height: 21px;
   width: 4px;
   background-color: #1e0606;
 }
@@ -262,12 +257,11 @@
 .right::after {
   content: "";
   position: absolute;
-  bottom: 0px;
-  right: 40%;
+  bottom: 2px;
+  left: 17.5px;
+  transform: rotate(-133deg);
 
-  transform: rotate(-130deg);
-
-  height: 65%;
+  height: 21px;
   width: 4px;
   background-color: #1e0606;
 }
@@ -284,7 +278,7 @@
   margin-top: 80px;
 }
 .info-img {
-  padding: 10px;
+  margin-top: 7px;
   width: 480px;
   min-width: 300px;
 }
@@ -295,14 +289,12 @@
   width: 540px;
   margin-top: 30px;
   margin-left: 60px;
-  margin-bottom: 57px;
 }
 
 .info-list {
   display: flex;
   flex-direction: column;
-  margin-top: 17px;
-  margin-bottom: 0px;
+  margin-top: 5px;
 }
 
 .list-category {
@@ -312,8 +304,7 @@
 .info-category {
   display: block;
   text-indent: 60px;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 13px;
   width: 326px;
   height: 55px;
 
@@ -325,8 +316,9 @@
   color: #1e0606;
 }
 
-.margin-left-60px {
+.margin-info {
   margin-left: 60px;
+  margin-top: 10px;
 }
 
 .info-category_activ {
@@ -335,7 +327,7 @@
 }
 
 .format-info_1 {
-  margin-top: 19px;
+  margin-top: 3px;
   margin-left: 60px;
 }
 
@@ -354,7 +346,7 @@
 
 .sponsors {
   display: flex;
-  margin-top: 80px;
+  margin-top: 62px;
 }
 
 .sponsor-list {
@@ -367,10 +359,18 @@
 
 .sponsor-list_item {
   margin-top: 10px;
-  margin-right: 10px;
 }
 
 /* about-us_map */
+
+.about-us {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 543px;
+  padding-left: 30px;
+  margin-top: 72px;
+}
 
 .about-us_map {
   display: flex;
@@ -419,15 +419,6 @@
   color: #1e0606;
 }
 
-.about-us {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  width: 543px;
-  padding-left: 30px;
-  margin-top: 90px;
-}
-
 .about-us-text {
   min-width: 360px;
   margin-top: 10px;
@@ -435,7 +426,7 @@
 }
 
 .button_buy {
-  margin-top: 20px;
+  margin-top: 22px;
   width: 123px;
 }
 .contacts {
@@ -444,7 +435,7 @@
   margin-left: 57px;
   padding-left: 30px;
   width: 543px;
-  margin-top: 90px;
+  margin-top: 72px;
 }
 
 .contacts-text {
