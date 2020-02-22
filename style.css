@@ -504,11 +504,10 @@
   margin-bottom: 6px;
 }
 
-.form-textarea{
-width: 600px;
-height: 150px;
-resize: none;
-
+.form-textarea {
+  width: 600px;
+  height: 150px;
+  resize: none;
 }
 
 .modal-consent {
@@ -578,4 +577,7 @@ resize: none;
   height: 20px;
   width: 2px;
   background-color: white;
+}
+.close {
+  display: none;
 }

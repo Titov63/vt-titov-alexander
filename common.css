@@ -77,6 +77,18 @@ img {
   align-items: baseline;
 }
 
+.button:hover {
+  background-color: #c29974;
+}
+
+.button:active {
+  background-color: #cfaf91;
+}
+
+.button:disabled {
+  background-color: #c1c1c1;
+}
+
 /* header */
 
 .contact-us {
@@ -93,6 +105,14 @@ img {
   width: 100px;
   min-width: 100px;
   height: 52px;
+}
+
+.logo:hover {
+  opacity: 0.5;
+}
+
+.logo:active {
+  opacity: 0.2;
 }
 
 .header-nav {
@@ -127,6 +147,22 @@ img {
   color: #1e0606;
 
   margin-left: 20px;
+}
+
+.header-link:hover {
+  opacity: 0.5;
+}
+
+.header-link:active {
+  opacity: 0.2;
+}
+
+.header-search:hover {
+  opacity: 0.5;
+}
+
+.header-search:active {
+  opacity: 0.2;
 }
 
 .header-link-bold {
@@ -250,6 +286,25 @@ img {
   margin: 0px;
 }
 
+.footer-text:hover {
+  opacity: 0.5;
+}
+
+.footer-text:active {
+  opacity: 0.2;
+}
+
+.copyright {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+
+  margin: 0px;
+}
+
 .footer-col {
   display: flex;
   flex-direction: column;
@@ -282,6 +337,18 @@ img {
   border: 0px;
 }
 
+.form-input:hover {
+  background-color: #666666;
+  border: 1px solid #fffdfd;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.form-input:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 .form-input::placeholder {
   padding-left: 15px;
   color: #ebebeb;
@@ -297,6 +364,10 @@ img {
   width: 81px;
 }
 
+.button-join:hover {
+  cursor: pointer;
+}
+
 .social {
   display: flex;
 
@@ -305,6 +376,14 @@ img {
 
 .social-list {
   margin-right: 10px;
+}
+
+.social-list:hover {
+  opacity: 0.5;
+}
+
+.social-list:active {
+  opacity: 0.2;
 }
 
 .develop {
