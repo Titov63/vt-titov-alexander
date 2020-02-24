@@ -1,0 +1,139 @@
+.c-us {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.title{
+    margin: 0px;
+    margin-top: 18px;
+}
+
+.bread-contact-us{
+    margin-top: 16px;
+    margin-bottom: 17px;
+}
+.popap-window {
+  display: flex;
+  flex-direction: column;
+  width: 680px;
+  background-color: #e5eaf8;
+  padding: 42px 40px;
+  margin-right: 120px;
+}
+
+.popap-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1px;
+}
+
+.popap-data {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.popap-long-input {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.popap-long-input::placeholder{
+    padding-left: 20px;
+}
+
+.popap-short-input {
+  width: 290px;
+  height: 50px;
+}
+
+.popap-lable-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+
+  margin-bottom: 6px;
+}
+
+.popap-form-textarea {
+  width: 600px;
+  height: 150px;
+  resize: none;
+}
+
+.popap-consent {
+  display: flex;
+  margin-top: 21px;
+}
+
+.popap-text-consent {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+  margin-left: 15px;
+}
+.popap-consent {
+  display: flex;
+}
+
+.popap-submit {
+  margin-top: 20px;
+  width: 106px;
+  height: 40px;
+  border: 0px;
+  
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.popap-submit:hover{
+  cursor: pointer;
+}
+
+.c-form {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 4px;
+}
+
+.c-us-text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1e0606;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.c-us-info {
+  max-width: 380px;
+}
+
+.important {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #c29974;
+  margin: 0px;
+}
+
+
