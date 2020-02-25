@@ -126,71 +126,11 @@
   margin-top: 90px;
 }
 
-.category-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 20px;
-  margin-right: -10px;
-}
 
-.product-list {
-  margin-top: 10px;
-  margin-right: 10px;
-}
 
-.product-item-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(/images/kids.jpg);
-  padding: 50px;
-  width: 280px;
-  height: 270px;
-}
 
-.product-item-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(/images/shop.jpg);
-  padding: 50px;
-  width: 280px;
-  height: 270px;
-}
 
-.product-item-3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(/images/toys.jpg);
-  padding: 50px;
-  width: 280px;
-  height: 270px;
-}
 
-.product-item-4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(/images/accessories.jpg);
-  padding: 50px;
-  width: 280px;
-  height: 270px;
-}
-
-.product-title {
-  display: block;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 32px;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
-}
 
 .slid-product {
   display: flex;
@@ -494,7 +434,7 @@
 }
 
 .lable-text {
-  font-family: 'Roboto', ;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -516,7 +456,7 @@
 }
 
 .text-consent {
-  font-family: 'Roboto', ;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
