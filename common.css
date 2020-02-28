@@ -122,8 +122,6 @@ img {
   background-color: #c1c1c1;
 }
 
-
-
 /* header */
 
 .contact-us {
@@ -167,7 +165,6 @@ img {
 .list-link {
   display: flex;
   flex-wrap: wrap;
-
   justify-content: space-between;
   width: 134px;
 }
@@ -180,7 +177,6 @@ img {
   line-height: 19px;
   text-transform: uppercase;
   color: #1e0606;
-
   margin-left: 20px;
 }
 
@@ -276,7 +272,6 @@ img {
   justify-content: center;
   align-items: center;
   background-image: url(/images/shop.jpg);
-  
   width: 280px;
   height: 270px;
 }
@@ -286,7 +281,6 @@ img {
   justify-content: center;
   align-items: center;
   background-image: url(/images/toys.jpg);
-  
   width: 280px;
   height: 270px;
 }
@@ -296,7 +290,6 @@ img {
   justify-content: center;
   align-items: center;
   background-image: url(/images/accessories.jpg);
-  
   width: 280px;
   height: 270px;
 }
@@ -306,7 +299,6 @@ img {
   justify-content: center;
   align-items: center;
   background-image: url(/images/sale.jpg);
-  
   width: 280px;
   height: 270px;
 }
@@ -316,7 +308,6 @@ img {
   justify-content: center;
   align-items: center;
   background-image: url(/images/adults.jpg);
-  
   width: 280px;
   height: 270px;
 }
@@ -326,7 +317,6 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -346,7 +336,7 @@ img {
   flex-direction: column;
   background-color: #434343;
   margin: 0px auto;
-  margin-top: 60px;
+  margin-top: 53px;
   width: 100%;
   max-width: 1400px;
   padding: 85px 91px;
@@ -359,7 +349,6 @@ img {
 
 .footer-title {
   margin: 0px;
-
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -381,7 +370,6 @@ img {
 .footer-line::before {
   content: "";
   position: absolute;
-
   height: 1px;
   width: 380px;
   background-color: #666666;
@@ -396,7 +384,6 @@ img {
 .footer-line-long::before {
   content: "";
   position: absolute;
-
   height: 1px;
   width: 400px;
   background-color: #666666;
@@ -409,7 +396,6 @@ img {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-
   margin: 0px;
 }
 
@@ -453,20 +439,18 @@ img {
   min-height: 243px;
 }
 
-.rating {
-  margin-right: 25px;
-}
+
 
 .form-input {
   background-color: #666666;
   width: 100%;
   padding: 0px;
-  border: 0px;
+  border: 1px solid transparent;
 }
 
 .form-input:hover {
   background-color: #666666;
-  border: 1px solid #fffdfd;
+  border-color: #fffdfd;
   box-sizing: border-box;
   cursor: pointer;
 }
@@ -519,17 +503,50 @@ img {
   margin-top: -2px;
 }
 
-.star-list {
+/* rating */
+
+.rating{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 2px;
-  width: 94px;
 }
 
-.star-icon {
-  margin: 0px;
+
+
+.rating-area {
+  margin-left: 28px;
+  margin-top: 3px;
+
 }
+
+.rating-area:hover + .company-rat{
+  color: #C29974;
+}
+
+.rating-area:not(:checked) > input {
+  display: none;
+}
+.rating-area:not(:checked) > label {
+  background-image: url(/images/Star-white.png);
+  background-repeat: no-repeat;
+  float: right;
+  width: 16px;
+  height: 17px;
+  padding: 0;
+  cursor: pointer;
+  margin-right: 3.88px;
+}
+
+.rating-area > input:checked ~ label {
+  background-image: url(/images/Star-gold.png);
+  background-repeat: no-repeat;
+}
+
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label{
+  background-image: url(/images/Star-gold.png);
+  background-repeat: no-repeat;
+}
+
+
 
 .design {
   display: flex;
@@ -539,7 +556,7 @@ img {
 
 .design-title {
   display: block;
-  margin-top: 26px;
+  margin-top: 28px;
   color: #a2a2a2;
 }
 
@@ -548,6 +565,6 @@ img {
   bottom: 2px;
 }
 
-.mb10{
+.mb10 {
   margin-bottom: 10px;
 }
