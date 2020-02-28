@@ -27,6 +27,10 @@ img {
   max-width: 100%;
 }
 
+fieldset {
+  border:0 none;
+}
+
 .hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -36,12 +40,6 @@ img {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-}
-.container {
-  width: 100%;
-  max-width: 1220px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 .list-point-none {
@@ -93,6 +91,13 @@ img {
   width: 2px;
   height: 36%;
   transform: rotate(223deg);
+}
+
+.container {
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .button {
@@ -439,8 +444,6 @@ img {
   min-height: 243px;
 }
 
-
-
 .form-input {
   background-color: #666666;
   width: 100%;
@@ -505,20 +508,23 @@ img {
 
 /* rating */
 
-.rating{
+.rating {
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
-
-
 
 .rating-area {
   margin-left: 28px;
   margin-top: 3px;
-
 }
 
-.rating-area:hover + .company-rat{
-  color: #C29974;
+.rating-area:hover + .company-rat {
+  color: #c29974;
+}
+
+.rating-area:checked ~ label + .company-rat {
+  color: #c29974;
 }
 
 .rating-area:not(:checked) > input {
@@ -541,12 +547,10 @@ img {
 }
 
 .rating-area:not(:checked) > label:hover,
-.rating-area:not(:checked) > label:hover ~ label{
+.rating-area:not(:checked) > label:hover ~ label {
   background-image: url(/images/Star-gold.png);
   background-repeat: no-repeat;
 }
-
-
 
 .design {
   display: flex;

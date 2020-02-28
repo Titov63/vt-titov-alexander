@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Toys</title>
   <link
-  href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700i%7CMontserrat:400,700%7COpen+Sans:400,700%7CRoboto:400,700&display=swap"
+    href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700i%7CMontserrat:400,700%7COpen+Sans:400,700%7CRoboto:400,700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="/common.css">
@@ -23,27 +23,34 @@
       </ul>
       <ul class="list-point-none list-link">
         <li><a href="#"><img class="header-search" src="/images/search-icon.svg" alt="search"></a></li>
-        <li class="contact-us"><a class="header-link header-link-bold " href="/pages/contact-us/index.html">Contact Us</a></li>
+        <li class="contact-us"><a class="header-link header-link-bold " href="/pages/contact-us/index.html">Contact
+            Us</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <h2 class="title-h2">Toy for kids</h2>
-    <ul class="list-point-none breadcrumbs">
-      <li><a class="breadcrumbs-list" href="/index.html">Home</a></li>
-      <li><a class="breadcrumbs-list" href="/pages/catalog/index.html">Catalog</a></li>
-      <li class="breadcrumbs-list breadcrumbs-list_activ">Toys</li>
-    </ul>
-    <section>
+    <section class="container">
+      <h2 class="title-h2 title-toy">Toy for kids</h2>
+      <ul class="list-point-none breadcrumbs bread-contact-us">
+
+        <li><a class="breadcrumbs-list" href="/index.html">Home</a></li>
+        <li><span class="breadcrumbs-arrow"></span></li>
+        <li class="breadcrumbs-list breadcrumbs-list_activ">Catalog</li>
+        <li><span class="breadcrumbs-arrow"></span></li>
+        <li class="breadcrumbs-list breadcrumbs-list_activ">Toys</li>
+      </ul>
+    </section>
+
+    <section class="background-filtr">
       <h1 class="hidden">Hidden</h1>
-      <form action="https://form-data-dl.herokuapp.com/api/messages" method="GET">
+      <form action="https://form-data-dl.herokuapp.com/api/messages" method="GET" class="sort-item">
         <fieldset class="fieldset-cost">
           <legend class="fieldset-title">Cost</legend>
           <input type="range" name="cost" id="form-range" min="0" max="500">
           <span class="filter-text">0</span>
           <span class="filter-text">500</span>
         </fieldset>
-        <fieldset class="fieldset-cost">
+        <fieldset class="fieldset-cost sort-check">
           <legend class="fieldset-title">Color</legend>
           <label><input type="checkbox" name="color" value="Black" class="sort-checkbox filter-text " checked>
             Black</label>
@@ -51,7 +58,7 @@
           <label><input type="checkbox" name="color" value="Green" class="sort-checkbox filter-text"> Green</label>
           <label><input type="checkbox" name="color" value="White" class="sort-checkbox filter-text"> White</label>
         </fieldset>
-        <fieldset class="fieldset-cost">
+        <fieldset class="fieldset-cost sort-check">
           <legend class="fieldset-title">Delivery</legend>
           <label><input type="radio" name="delivery" value="Free" class="sort-radio filter-text"> Free shipping</label>
           <label><input type="radio" name="delivery" value="Fast" class="sort-radio filter-text" checked> Fast
@@ -66,60 +73,63 @@
           <label><input type="radio" name="amount" value="20-50"
               class="amount-radio amount-checked filter-text">20-50</label>
         </fieldset>
-        <button type="submit" class="button">Apply</button>
+        <button type="submit" class="button button_apply">Apply</button>
       </form>
     </section>
-    <section>
+    <section class="container ">
       <h2 class="hidden">Hidden</h2>
       <ul class="list-point-none sort">
-        <li class="sort-list">
-          <a href="#">
+        <li class="item-sort">
+          <a class="sort-list" href="#">
             <img class="sort-img" src="/images/sharky.png" alt="SHARKY BEAN BAG CHAIR COVER">
-            <span class="filter-text">SHARKY BEAN BAG CHAIR COVER</span>
+            <span class="sort-text">SHARKY BEAN BAG CHAIR COVER</span>
             <span class="sort-price">$60.00 USD</span>
           </a>
         </li>
-        <li class="sort-list">
-          <a href="#">
+        <li class="item-sort">
+          <a class="sort-list" href="#">
             <img class="sort-img" src="/images/brass.png" alt="BRASS DECO FRAMES">
             <span class="sort-text">BRASS DECO FRAMES</span>
             <span class="sort-price">$66.00 USD</span>
           </a>
         </li>
-        <li class="sort-list"><a href="#">
+        <li class="item-sort"><a class="sort-list" href="#">
             <img class="sort-img" src="/images/cibo.png" alt="CIBO FULL APRON">
             <span class="sort-text">CIBO FULL APRON</span>
             <span class="sort-price">$60.00 USD</span>
           </a>
         </li>
-        <li class="sort-list"><a href="#">
+        <li class="item-sort"><a class="sort-list" href="#">
             <img class="sort-img" src="/images/gumball-machine.png" alt="GATCHA GATCHA GUMBALL MACHINE">
             <span class="sort-text">GATCHA GATCHA GUMBALL MACHINE</span>
-            <span class="sort-price">$$56.00 USD</span>
+            <span class="sort-price">$56.00 USD</span>
           </a>
         </li>
-        <li class="sort-list"><a href="#">
+        <li class="item-sort"><a class="sort-list" href="#">
             <img class="sort-img" src="/images/candle.png" alt="CHRISTMAS ADVENT SCENTED CANDLE">
             <span class="sort-text">CHRISTMAS ADVENT SCENTED CANDLE</span>
             <span class="sort-price">$29.00 USD</span>
           </a>
         </li>
-        <li class="sort-list"><a href="#">
+        <li class="item-sort"><a class="sort-list" href="#">
             <img class="sort-img" src="/images/tangle.png" alt="TANGLE SPINNING TEA LIGHT">
             <span class="sort-text">TANGLE SPINNING TEA LIGHT</span>
             <span class="sort-price">$56.00 USD</span>
           </a>
         </li>
       </ul>
+      <ul class="list-point-none slider-nav">
+        <li><a class="nav-left" href="#"></a></li>
+        <li class="num-list">
+          <a class="num action-num" href="#">1</a>
+          <a class="num" href="#">2</a>
+          <a class="num" href="#">3</a>
+          <a class="num" href="#">4</a>
+        </li>
+        <li><a class="nav-right" href="#"></a></li>
+      </ul>
     </section>
-    <ul class="list-point-none slider-nav">
-      <li><a class="nav-left" href="#"></a></li>
-      <li class="slider-num action-num"><a href="#">1</a></li>
-      <li class="slider-num action-num"><a href="#">2</a></li>
-      <li class="slider-num action-num"><a href="#">3</a></li>
-      <li class="slider-num action-num"><a href="#">4</a></li>
-      <li><a class="nav-right" href="#"></a></li>
-    </ul>
+
   </main>
   <footer class="footer">
     <div class="footer-nav">
