@@ -28,7 +28,7 @@ img {
 }
 
 fieldset {
-  border:0 none;
+  border: 0 none;
 }
 
 .hidden {
@@ -47,28 +47,37 @@ fieldset {
   padding-left: 0px;
 }
 
+.title-breadcrumbs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 39px;
+}
+
 .breadcrumbs {
   display: flex;
+  list-style-type: none;
+  padding-left: 0px;
   margin: 0px;
 }
 
-.breadcrumbs-list {
+.breadcrumbs-text {
   font-family: "Crimson Text", serif;
   font-style: italic;
   font-weight: normal;
   font-size: 20px;
   line-height: 25px;
   color: #1e0606;
+  margin-right: 25px;
 }
 
-.breadcrumbs-list_activ {
+.breadcrumbs-activ {
   opacity: 0.5;
 }
 
 .breadcrumbs-arrow {
   position: relative;
   width: 8px;
-  margin: 0px 25px;
+  margin-right: 28px;
 }
 
 .breadcrumbs-arrow::before {
@@ -137,6 +146,7 @@ fieldset {
   display: flex;
   padding-top: 50px;
   padding-bottom: 40px;
+  margin-bottom: 18px;
 }
 
 .logo {
@@ -571,4 +581,79 @@ fieldset {
 
 .mb10 {
   margin-bottom: 10px;
+}
+.slider-nav {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  margin-bottom: 62px;
+}
+
+.num-list {
+  display: flex;
+  justify-content: space-between;
+  width: 232px;
+}
+
+.num {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #1e0606;
+}
+
+.action-num {
+  color: #c29974;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-left::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 8px;
+  height: 16px;;
+  width: 4px;
+  transform: rotate(-313deg);
+  background-color: rgba(30, 6, 6, 0.12);
+}
+
+.nav-left::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 7px;
+  height: 20px;
+  width: 4px;
+  transform: rotate(136deg);
+  background-color: rgba(30, 6, 6, 0.12);
+}
+
+.nav-right::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 8px;
+  height: 16px;;
+  width: 4px;
+  transform: rotate(-227deg);
+  background-color: rgba(30, 6, 6, 0.12);
+}
+
+.nav-right::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: 7px;
+  height: 20px;
+  width: 4px;
+  transform: rotate(44deg);
+  background-color: rgba(30, 6, 6, 0.12);
 }
