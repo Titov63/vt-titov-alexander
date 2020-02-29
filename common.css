@@ -29,6 +29,7 @@ img {
 
 fieldset {
   border: 0 none;
+  padding: 0px;
 }
 
 .hidden {
@@ -60,6 +61,11 @@ fieldset {
   margin: 0px;
 }
 
+.bread-title{
+  margin: 0px;
+  margin-bottom: 16px;
+ }
+
 .breadcrumbs-text {
   font-family: "Crimson Text", serif;
   font-style: italic;
@@ -78,6 +84,12 @@ fieldset {
   position: relative;
   width: 8px;
   margin-right: 28px;
+}
+
+.breadcrumbs-arrow_many {
+  position: relative;
+  width: 8px;
+  margin-right: 24px;
 }
 
 .breadcrumbs-arrow::before {
@@ -437,6 +449,8 @@ fieldset {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  list-style-type: none;
+  padding-left: 0px;
   margin: 0px;
   margin-left: 20px;
   margin-top: 16px;
@@ -619,7 +633,7 @@ fieldset {
   position: absolute;
   top: -5px;
   left: 8px;
-  height: 16px;;
+  height: 16px;
   width: 4px;
   transform: rotate(-313deg);
   background-color: rgba(30, 6, 6, 0.12);
@@ -641,7 +655,7 @@ fieldset {
   position: absolute;
   top: -5px;
   right: 8px;
-  height: 16px;;
+  height: 16px;
   width: 4px;
   transform: rotate(-227deg);
   background-color: rgba(30, 6, 6, 0.12);

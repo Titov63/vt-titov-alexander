@@ -28,22 +28,23 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <section class="container">
-      <h2 class="title-h2 title-toy">Toy for kids</h2>
-      <ul class="list-point-none breadcrumbs bread-contact-us">
+  <main class="container">
 
-        <li><a class="breadcrumbs-list" href="/index.html">Home</a></li>
-        <li><span class="breadcrumbs-arrow"></span></li>
-        <li class="breadcrumbs-list breadcrumbs-list_activ">Catalog</li>
-        <li><span class="breadcrumbs-arrow"></span></li>
-        <li class="breadcrumbs-list breadcrumbs-list_activ">Toys</li>
+    <div class="title-breadcrumbs toy">
+      <h2 class="title-h2 bread-title">Toy for kids</h2>
+      <ul class=" breadcrumbs">
+        <li><a class="breadcrumbs-text" href="/index.html">Home</a></li>
+        <li><span class="breadcrumbs-arrow breadcrumbs-arrow_many"></span></li>
+        <li class="breadcrumbs-text">Catalog</li>
+        <li><span class="breadcrumbs-arrow breadcrumbs-arrow_many"></span></li>
+        <li class="breadcrumbs-text breadcrumbs-activ">Toys</li>
       </ul>
-    </section>
+    </div>
+    <section class="filtr">
 
-    <section class="background-filtr">
+      <div class="background-filtr"></div>
       <h1 class="hidden">Hidden</h1>
-      <form action="https://form-data-dl.herokuapp.com/api/messages" method="GET" class="sort-item">
+      <form class="filtr-form" action="https://form-data-dl.herokuapp.com/api/messages" method="GET" class="sort-item">
         <fieldset class="fieldset-cost">
           <legend class="fieldset-title">Cost</legend>
           <input type="range" name="cost" id="form-range" min="0" max="500">
@@ -76,64 +77,64 @@
         <button type="submit" class="button button_apply">Apply</button>
       </form>
     </section>
-    <section class="container ">
+    <section class="sort-list">
       <h2 class="hidden">Hidden</h2>
       <ul class="list-point-none sort">
         <li class="item-sort">
-          <a class="sort-list" href="#">
+          <a class="sort-href" href="#">
             <img class="sort-img" src="/images/sharky.png" alt="SHARKY BEAN BAG CHAIR COVER">
             <span class="sort-text">SHARKY BEAN BAG CHAIR COVER</span>
             <span class="sort-price">$60.00 USD</span>
           </a>
         </li>
         <li class="item-sort">
-          <a class="sort-list" href="#">
+          <a class="sort-href" href="#">
             <img class="sort-img" src="/images/brass.png" alt="BRASS DECO FRAMES">
             <span class="sort-text">BRASS DECO FRAMES</span>
             <span class="sort-price">$66.00 USD</span>
           </a>
         </li>
-        <li class="item-sort"><a class="sort-list" href="#">
+        <li class="item-sort"><a class="sort-href" href="#">
             <img class="sort-img" src="/images/cibo.png" alt="CIBO FULL APRON">
             <span class="sort-text">CIBO FULL APRON</span>
             <span class="sort-price">$60.00 USD</span>
           </a>
         </li>
-        <li class="item-sort"><a class="sort-list" href="#">
+        <li class="item-sort"><a class="sort-href" href="#">
             <img class="sort-img" src="/images/gumball-machine.png" alt="GATCHA GATCHA GUMBALL MACHINE">
             <span class="sort-text">GATCHA GATCHA GUMBALL MACHINE</span>
             <span class="sort-price">$56.00 USD</span>
           </a>
         </li>
-        <li class="item-sort"><a class="sort-list" href="#">
+        <li class="item-sort"><a class="sort-href" href="#">
             <img class="sort-img" src="/images/candle.png" alt="CHRISTMAS ADVENT SCENTED CANDLE">
             <span class="sort-text">CHRISTMAS ADVENT SCENTED CANDLE</span>
             <span class="sort-price">$29.00 USD</span>
           </a>
         </li>
-        <li class="item-sort"><a class="sort-list" href="#">
+        <li class="item-sort"><a class="sort-href" href="#">
             <img class="sort-img" src="/images/tangle.png" alt="TANGLE SPINNING TEA LIGHT">
             <span class="sort-text">TANGLE SPINNING TEA LIGHT</span>
             <span class="sort-price">$56.00 USD</span>
           </a>
         </li>
       </ul>
-      <ul class="list-point-none slider-nav">
-        <li><a class="nav-left" href="#"></a></li>
-        <li class="num-list">
-          <a class="num action-num" href="#">1</a>
-          <a class="num" href="#">2</a>
-          <a class="num" href="#">3</a>
-          <a class="num" href="#">4</a>
-        </li>
-        <li><a class="nav-right" href="#"></a></li>
-      </ul>
     </section>
+    <ul class="list-point-none slider-nav">
+      <li class="nav-item"><a class="nav-left" href="#"></a></li>
+      <li class="num-list">
+        <a class="num action-num" href="#">1</a>
+        <a class="num" href="#">2</a>
+        <a class="num" href="#">3</a>
+        <a class="num" href="#">4</a>
+      </li>
+      <li class="nav-item"><a class="nav-right" href="#"></a></li>
+    </ul>
 
   </main>
   <footer class="footer">
     <div class="footer-nav">
-      <ul class="list-point-none footer-col">
+      <ul class="footer-col">
         <li>
           <h4 class="footer-title">Navigation</h4>
         </li>
@@ -146,21 +147,25 @@
         <li class="footer-list"><a class="footer-text" href="#">Shop By Designer</a></li>
         <li class="line-long"><span class="footer-line-long"></span></li>
         <li class="footer-list">
-          <ul class="list-point-none develop">
-            <li>
-              <p class="footer-text rating">Company Rating</p>
-            </li>
-            <li class="star-list">
-              <img class="star-icon" src="/images/Star.png" alt="star">
-              <img class="star-icon" src="/images/Star.png" alt="star">
-              <img class="star-icon" src="/images/Star.png" alt="star">
-              <img class="star-icon" src="/images/Star.png" alt="star">
-              <img class="star-icon" src="/images/Star.png" alt="star">
-            </li>
-          </ul>
+          <div class="rating">
+            <div class="rating-area">
+              <input type="radio" id="star-5" name="rating" value="5">
+              <label for="star-5" title="Оценка «5»"></label>
+              <input type="radio" id="star-4" name="rating" value="4">
+              <label for="star-4" title="Оценка «4»"></label>
+              <input type="radio" id="star-3" name="rating" value="3">
+              <label for="star-3" title="Оценка «3»"></label>
+              <input type="radio" id="star-2" name="rating" value="2">
+              <label for="star-2" title="Оценка «2»"></label>
+              <input type="radio" id="star-1" name="rating" value="1">
+              <label for="star-1" title="Оценка «1»"></label>
+            </div>
+            <span class="footer-text company-rat">Company Rating</span>
+          </div>
+
         </li>
       </ul>
-      <ul class="list-point-none footer-col">
+      <ul class="footer-col">
         <li>
           <h4 class="footer-title">Customer Information</h4>
         </li>

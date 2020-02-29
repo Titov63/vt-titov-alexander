@@ -30,14 +30,25 @@
   </header>
 
 
-  <main>
-    <section class="catalog-category container">
-      <h2 class="title-h2 cat-title">Category Products</h2>
-      <ul class="list-point-none breadcrumbs bread-category">
-        <li><a class="breadcrumbs-list" href="/index.html">Home</a></li>
+  <main class="container">
+    <div class="title-breadcrumbs">
+      <h2 class="title-h2 bread-title">Category Products</h2>
+      <ul class=" breadcrumbs">
+        <li><a class="breadcrumbs-text" href="/index.html">Home</a></li>
         <li><span class="breadcrumbs-arrow"></span></li>
-        <li class="breadcrumbs-list breadcrumbs-list_activ">Catalog</li>
+        <li class="breadcrumbs-text breadcrumbs-activ">Catalog</li>
       </ul>
+    </div>
+
+
+
+    <section class="catalog-category">
+    
+
+
+
+
+      
       <ul class="list-point-none ctg-list">
         <li class="prod-list"><a class="product-item-1" href="#"><span class="product-title ">APPAREL KIDS</span>
           </a></li>
@@ -78,7 +89,7 @@
   </main>
   <footer class="footer">
     <div class="footer-nav">
-      <ul class="list-point-none footer-col">
+      <ul class="footer-col">
         <li>
           <h4 class="footer-title">Navigation</h4>
         </li>
@@ -91,21 +102,25 @@
         <li class="footer-list"><a class="footer-text" href="#">Shop By Designer</a></li>
         <li class="line-long"><span class="footer-line-long"></span></li>
         <li class="footer-list">
-          <ul class="list-point-none develop">
-            <li>
-              <p class="footer-text rating">Company Rating</p>
-            </li>
-            <li class="star-list">
-              <img class="star-icon" src="/images/Star.png" alt="star">
-              <img class="star-icon" src="/images/Star.png" alt="star">
-              <img class="star-icon" src="/images/Star.png" alt="star">
-              <img class="star-icon" src="/images/Star.png" alt="star">
-              <img class="star-icon" src="/images/Star.png" alt="star">
-            </li>
-          </ul>
+          <div class="rating">
+            <div class="rating-area">
+              <input type="radio" id="star-5" name="rating" value="5">
+              <label for="star-5" title="Оценка «5»"></label>
+              <input type="radio" id="star-4" name="rating" value="4">
+              <label for="star-4" title="Оценка «4»"></label>
+              <input type="radio" id="star-3" name="rating" value="3">
+              <label for="star-3" title="Оценка «3»"></label>
+              <input type="radio" id="star-2" name="rating" value="2">
+              <label for="star-2" title="Оценка «2»"></label>
+              <input type="radio" id="star-1" name="rating" value="1">
+              <label for="star-1" title="Оценка «1»"></label>
+            </div>
+            <span class="footer-text company-rat">Company Rating</span>
+          </div>
+
         </li>
       </ul>
-      <ul class="list-point-none footer-col">
+      <ul class="footer-col">
         <li>
           <h4 class="footer-title">Customer Information</h4>
         </li>

@@ -1,3 +1,12 @@
+.toy {
+  margin-bottom: 48px;
+}
+
+.filtr {
+  position: relative;
+  margin-bottom: 60px;
+}
+
 .title-toy {
   display: block;
   margin-top: 17px;
@@ -6,12 +15,23 @@
 
 .background-filtr {
   position: relative;
-  width: 100%;
-  max-width: 1400px;
+  left: -110px;
+  top: 0px;
+
+  width: 1400px;
   height: 254px;
-  margin: 0 auto;
+
   background-color: rgba(125, 151, 218, 0.2);
-  margin-top: 48px;
+}
+
+.filtr-form {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  width: 1095px;
+  height: 170px;
 }
 
 .sort-item {
@@ -45,18 +65,23 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 60px;
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 0px;
 }
 
-.sort-list {
+.sort-href {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
+.sort-list {
+  margin-bottom: 30px;
+}
+
 .item-sort {
-  max-width: 380px;
+  width: 380px;
 }
 
 .sort-img {
@@ -92,5 +117,3 @@
   margin-top: 16px;
   margin-bottom: 47px;
 }
-
-
