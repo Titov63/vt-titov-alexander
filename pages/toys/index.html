@@ -41,9 +41,9 @@
       </ul>
     </div>
     <section class="filtr">
-
-      <div class="background-filtr"></div>
       <h1 class="hidden">Hidden</h1>
+      <div class="background-filtr"></div>
+
       <form class="filtr-form" action="https://form-data-dl.herokuapp.com/api/messages" method="GET" class="sort-item">
         <fieldset class="fieldset-cost">
           <legend class="fieldset-title">Cost</legend>
@@ -55,9 +55,12 @@
           <legend class="fieldset-title">Color</legend>
           <label><input type="checkbox" name="color" value="Black" class="sort-checkbox filter-text " checked>
             Black</label>
-          <label><input type="checkbox" name="color" value="Blue" class="sort-checkbox filter-text"> Blue</label>
-          <label><input type="checkbox" name="color" value="Green" class="sort-checkbox filter-text"> Green</label>
-          <label><input type="checkbox" name="color" value="White" class="sort-checkbox filter-text"> White</label>
+          <label class="filter-text">
+            <input type="checkbox" name="color" value="Blue" class="sort-checkbox "> Blue</label>
+          <label class="filter-text">
+            <input type="checkbox" name="color" value="Green" class="sort-checkbox "> Green</label>
+          <label class="filter-text">
+            <input type="checkbox" name="color" value="White" class="sort-checkbox "> White</label>
         </fieldset>
         <fieldset class="fieldset-cost sort-check">
           <legend class="fieldset-title">Delivery</legend>
