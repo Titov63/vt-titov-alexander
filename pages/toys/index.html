@@ -58,29 +58,35 @@
 
         <fieldset class="fieldset-checkbox">
           <legend class="fieldset-title">Color</legend>
-          <label class="filter-text indicator-text">
-            <input type="checkbox" name="color" value="Black" class="indicator-none " checked>
-            <span class="form-checkbox-indicator checkbox-activ"></span>Black</label>
 
-          <label class="filter-text indicator-text">
-            <input type="checkbox" name="color" value="Blue" class="indicator-none ">
-            <span class="form-checkbox-indicator"></span> Blue</label>
+          <label class="checkbox-label">
+            <input class="form-checkbox hidden " type="checkbox" name="color" value="Black"  checked>
+            <span class="form-checkbox-indicator checkbox-cheked"></span >
+              <span class="filter-text">Black</span> </label>
 
-          <label class="filter-text indicator-text">
-            <input type="checkbox" name="color" value="Green" class="indicator-none ">
-            <span class="form-checkbox-indicator"></span> Green</label>
-          <label class="filter-text indicator-text">
-            <input type="checkbox" name="color" value="White" class="indicator-none ">
-            <span class="form-checkbox-indicator"></span> White</label>
+          <label class="checkbox-label">
+            <input class="form-checkbox hidden " type="checkbox" name="color" value="Blue" >
+            <span class="form-checkbox-indicator"></span>
+            <span class="filter-text">Blue</span> </label>
+
+          <label class="checkbox-label">
+            <input class="form-checkbox hidden " type="checkbox" name="color" value="Green" >
+            <span class="form-checkbox-indicator"></span>
+            <span class="filter-text">Green</span></label>
+
+          <label class="checkbox-label">
+            <input class="form-checkbox hidden " type="checkbox" name="color" value="White" >
+            <span class="form-checkbox-indicator"></span>
+            <span class="filter-text">White</span></label>
         </fieldset>
 
         <fieldset class="fieldset-radio">
           <legend class="fieldset-title">Delivery</legend>
-          <label class="filter-text indicator-radio"><input type="radio" name="delivery" value="Free"
-              class="indicator-none ">
+          <label class="filter-text indicator-radio"><input class="hidden" type="radio" name="delivery" value="Free"
+              >
             <span class="form-radio-indicator"></span> Free shipping</label>
-          <label class="filter-text indicator-radio"><input type="radio" name="delivery" value="Fast"
-              class="indicator-none " checked>
+          <label class="filter-text indicator-radio"><input class="hidden" type="radio" name="delivery" value="Fast"
+               checked>
             <span class="form-radio-indicator radio-activ"></span> Fast
             shipping</label>
         </fieldset>
@@ -88,12 +94,12 @@
         <fieldset class="fieldset-amount">
           <legend class="fieldset-title">Amount</legend>
           <div class="amount-sort">
-            <label class="filter-text indicator-amount amount-text1 amount-activ"><input type="radio" name="amount" value="0-5"
-                class="indicator-none" checked></label>
-            <label class="filter-text indicator-amount amount-text2"><input type="radio" name="amount" value="10-20"
-                class="indicator-none"></label>
-            <label class="filter-text indicator-amount amount-text3"><input type="radio" name="amount" value="20-50"
-                class="indicator-none"></label>
+            <label class="filter-text indicator-amount amount-text1 amount-activ"><input class="hidden" type="radio" name="amount" value="0-5"
+                 checked></label>
+            <label class="filter-text indicator-amount amount-text2"><input class="hidden" type="radio" name="amount" value="10-20"
+                ></label>
+            <label class="filter-text indicator-amount amount-text3"><input class="hidden" type="radio" name="amount" value="20-50"
+                ></label>
           </div>
         </fieldset>
 

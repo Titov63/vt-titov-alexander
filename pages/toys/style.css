@@ -60,10 +60,64 @@
   margin-right: 124px;
 }
 
-.indicator-text {
+.checkbox-label {
   display: flex;
   position: relative;
   margin-bottom: 15px;
+}
+
+.filter-text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1e0606;
+}
+
+.form-checkbox:checked + .form-checkbox-indicator::before {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 7px;
+  background-color: #c29974;
+  border-radius: 10px;
+  height: 10px;
+  width: 3px;
+  transform: rotate(-34deg);
+}
+
+.form-checkbox:checked + .form-checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+  background-color: #c29974;
+  border-radius: 10px;
+  height: 13px;
+  width: 3px;
+  transform: rotate(21deg);
+}
+
+.form-checkbox:focus ~ .filter-text {
+  text-decoration: underline;
+}
+
+.form-checkbox-indicator {
+  width: 19px;
+  height: 19px;
+  border: 2px solid #c29974;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.checkbox-cheked {
+  width: 19px;
+  height: 19px;
+  border: 2px solid #c29974;
+  border-radius: 3px;
+  margin-right: 10px;
+  background-color: #ffffff;
 }
 
 .indicator-radio {
@@ -71,8 +125,6 @@
   position: relative;
   margin-bottom: 10px;
 }
-
-
 
 .form-radio-indicator {
   position: relative;
@@ -191,16 +243,6 @@
 
 .sort-img {
   margin-bottom: 30px;
-}
-
-
-.filter-text {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: #1e0606;
 }
 
 .sort-text {

@@ -148,47 +148,7 @@ fieldset {
   background-color: #c1c1c1;
 }
 
-.indicator-none {
-  display: none;
-}
 
-.form-checkbox-indicator {
-  display: block;
-  width: 19px;
-  height: 19px;
-  border: 2px solid #c29974;
-  box-sizing: border-box;
-  border-radius: 3px;
-  margin-right: 10px;
-}
-
-.checkbox-activ {
-  background-color: #ffffff;
-}
-
-.checkbox-activ::before {
-  content: "";
-  position: absolute;
-  bottom: 6px;
-  left: 7px;
-  background-color: #c29974;
-  border-radius: 10px;
-  height: 10px;
-  width: 3px;
-  transform: rotate(-34deg);
-}
-
-.checkbox-activ::after {
-  content: "";
-  position: absolute;
-  bottom: 8px;
-  left: 12px;
-  background-color: #c29974;
-  border-radius: 10px;
-  height: 13px;
-  width: 3px;
-  transform: rotate(21deg);
-}
 
 /* header */
 
