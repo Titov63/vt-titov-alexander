@@ -32,10 +32,12 @@
 
   width: 1095px;
   height: 170px;
+  margin-top: 42px;
 }
 
-.fieldset-cost{
-  margin-right: 20px;
+.fieldset-range {
+  margin: 0px;
+  margin-right: 95px;
 }
 
 .sort-item {
@@ -46,8 +48,139 @@
   max-width: 1095px;
   margin: 42px 0px 42px 110px;
 }
-.sort-check {
+
+.range {
+  margin-bottom: 10px;
+  width: 206px;
+}
+
+.fieldset-checkbox {
   display: flex;
+  margin: 0px;
+  margin-right: 124px;
+}
+
+.indicator-text {
+  display: flex;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.indicator-radio {
+  display: flex;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.form-checkbox-indicator {
+  display: block;
+  width: 19px;
+  height: 19px;
+  border: 2px solid #c29974;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.checkbox-activ {
+  background-color: #ffffff;
+}
+
+.checkbox-activ::before {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 7px;
+  background-color: #c29974;
+  border-radius: 10px;
+  height: 10px;
+  width: 3px;
+  transform: rotate(-34deg);
+}
+
+.checkbox-activ::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+  background-color: #c29974;
+  border-radius: 10px;
+  height: 13px;
+  width: 3px;
+  transform: rotate(21deg);
+}
+
+.form-radio-indicator {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #c29974;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.radio-activ::before {
+  content: "";
+  position: absolute;
+  background: #c29974;
+  border-radius: 10px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+}
+
+.fieldset-radio {
+  margin: 0px;
+  margin-right: 69px;
+}
+
+.fieldset-amount {
+  margin: 0px;
+  margin-right: 60px;
+}
+
+
+.amount-sort {
+  display: flex;
+}
+
+
+.indicator-amount {
+  position: relative;
+  width: 80px;
+  height: 35px;
+  background-color: #ffffff;
+}
+
+.amount-activ{
+background-color:#F3D0DB ;
+}
+.amount-text1::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  content: "0-5";
+}
+
+.amount-text2::before {
+  position: absolute;
+  left: 24%;
+    top: 20%;
+  
+  content: "10-20";
+}
+
+.amount-text3::before {
+  position: absolute;
+  left: 24%;
+    top: 20%;
+  
+  content: "20-50";
 }
 
 .fieldset-title {
@@ -57,12 +190,17 @@
   font-size: 16px;
   line-height: 22px;
   color: #1e0606;
+  margin-bottom: 15px;
+}
+
+.range-num {
+  display: flex;
+  justify-content: space-between;
 }
 
 .button_apply {
   width: 95px;
   height: 44px;
-  
 }
 
 .sort {
@@ -92,7 +230,7 @@
   margin-bottom: 30px;
 }
 
-.sort-checkbox{
+.indicator-none {
   display: none;
 }
 
