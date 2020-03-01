@@ -27,13 +27,13 @@
       </ul>
     </nav>
   </header>
-  <main class="container">
+  <main class="container con-us">
     
-    <div class="title-breadcrumbs">
+    <div class="title-breadcrumbs margin">
       <h2 class="title-h2 bread-title">Contact Us</h2>
       <ul class=" breadcrumbs">
-        <li><a class="breadcrumbs-text" href="/index.html">Home</a></li>
-        <li><span class="breadcrumbs-arrow"></span></li>
+        <li><a class="breadcrumbs-text " href="/index.html">Home</a></li>
+        <li><span class="breadcrumbs-arrow breadcrumbs-arrow_many"></span></li>
         <li class="breadcrumbs-text breadcrumbs-activ">Contact Us</li>
       </ul>
     </div>
@@ -61,11 +61,16 @@
             <span class="popap-lable-text">Message</span>
             <textarea class="popap-form-textarea" name="message"></textarea>
           </label>
+
+          
+
           <label class="popap-consent">
-            <input class="popap-checkbox" type="checkbox" name="accept">
+            <input class="indicator-none" type="checkbox" name="accept">
+            <span class="popap-checkbox-indicator popap-checkbox-activ"></span>
             <span class="popap-text-consent">By clicking on the button, you consent to the
               processing of your personal data</span>
           </label>
+
           <button class=" button popap-submit" type="submit">Submit</button>
         </form>
         <div class="c-us-info">
@@ -90,9 +95,9 @@
         <li class="footer-list"><a class="footer-text" href="#">Design Services</a></li>
         <li class="footer-list"><a class="footer-text" href="#">Featured On</a></li>
         <li class="footer-list"><a class="footer-text" href="#">2018 Holiday Catalog</a></li>
-        <li class="footer-list"><a class="footer-text" href="#">Shop By Designer</a></li>
+        <li class="list-end"><a class="footer-text" href="#">Shop By Designer</a></li>
         <li class="line-long"><span class="footer-line-long"></span></li>
-        <li class="footer-list">
+        <li>
           <div class="rating">
             <div class="rating-area">
               <input type="radio" id="star-5" name="rating" value="5">
@@ -121,7 +126,7 @@
         <li class="footer-list"><a class="footer-text" href="#">Shipping & Returns</a></li>
         <li class="footer-list"><a class="footer-text" href="#">Terms & Conditions</a></li>
         <li class="footer-list"><a class="footer-text" href="#">Privacy Policy</a></li>
-        <li class="footer-list"><a class="footer-text" href="#">Search</a></li>
+        <li class="list-end"><a class="footer-text" href="#">Search</a></li>
         <li class="line-long"><span class="footer-line-long"></span></li>
         <li class="design">
           <p class=" copyright">Copyright © 2018 Dlk • Design Life Kids</p>
@@ -129,13 +134,14 @@
       </ul>
       <div class="connect">
         <h4 class="footer-title">Connect</h4>
-        <div class="footer-list-line"><span class=" footer-line"></span></div>
+        <div class="line-connect"><span class=" footer-line"></span></div>
 
         <form class="input-sub" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
           <input class="form-input" type="email" name="email" id="form-input" placeholder="Email">
           <button type="submit" class="button button-join">Join</button>
         </form>
-        <ul class="list-point-none social">
+
+        <ul class="social">
           <li class="social-list"><a href="https://www.facebook.com/">
               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -178,10 +184,10 @@
 
             </a></li>
         </ul>
-        <div class="design-name">
-          <span class="footer-line"></span>
-          <a href="https://directlinedev.com/" class="design-title">Web Design — Direct Line Development</a>
-        </div>
+        <ul class="design-name">
+          <li class="design-list-line"><span class="design-line"></span></li>
+          <li><a href="https://directlinedev.com/" class="design-title">Web Design — Direct Line Development</a></li>
+        </ul>
       </div>
     </div>
   </footer>

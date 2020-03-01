@@ -1,17 +1,21 @@
+.con-us{
+  margin-bottom: 60px;
+}
+
 .c-us {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
-.title{
-    margin: 0px;
-    margin-top: 18px;
+.title {
+  margin: 0px;
+  margin-top: 18px;
 }
 
-.bread-contact-us{
-    margin-top: 16px;
-    margin-bottom: 17px;
+.bread-contact-us {
+  margin-top: 16px;
+  margin-bottom: 17px;
 }
 
 .popap-window {
@@ -41,8 +45,8 @@
   margin-bottom: 20px;
 }
 
-.popap-long-input::placeholder{
-    padding-left: 20px;
+.popap-long-input::placeholder {
+  padding-left: 20px;
 }
 
 .popap-short-input {
@@ -65,11 +69,14 @@
   width: 600px;
   height: 150px;
   resize: none;
+  margin-bottom: 19px;
 }
 
 .popap-consent {
+  position: relative;
   display: flex;
-  margin-top: 21px;
+  margin-bottom: 17px;
+  
 }
 
 .popap-text-consent {
@@ -79,18 +86,55 @@
   font-size: 14px;
   line-height: 16px;
   color: black;
-  margin-left: 15px;
+  padding: 3px;
 }
 .popap-consent {
   display: flex;
 }
 
+.popap-checkbox-indicator {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #c29974;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.popap-checkbox-activ {
+  background-color: #ffffff;
+}
+
+.popap-checkbox-activ::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 7px;
+  background-color: #c29974;
+  border-radius: 10px;
+  height: 10px;
+  width: 3px;
+  transform: rotate(-34deg);
+}
+
+.popap-checkbox-activ::after {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  left: 12px;
+  background-color: #c29974;
+  border-radius: 10px;
+  height: 13px;
+  width: 3px;
+  transform: rotate(21deg);
+}
+
 .popap-submit {
-  margin-top: 20px;
   width: 106px;
   height: 40px;
   border: 0px;
-  
+
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -101,14 +145,12 @@
   color: #ffffff;
 }
 
-.popap-submit:hover{
+.popap-submit:hover {
   cursor: pointer;
 }
 
 .c-form {
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 4px;
 }
 
 .c-us-text {
@@ -119,7 +161,7 @@
   line-height: 22px;
   color: #1e0606;
   margin: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .c-us-info {
@@ -137,4 +179,6 @@
   margin: 0px;
 }
 
-
+.margin{
+  margin-bottom: 48px;
+}

@@ -72,43 +72,7 @@
   margin-bottom: 10px;
 }
 
-.form-checkbox-indicator {
-  display: block;
-  width: 19px;
-  height: 19px;
-  border: 2px solid #c29974;
-  box-sizing: border-box;
-  border-radius: 3px;
-  margin-right: 10px;
-}
 
-.checkbox-activ {
-  background-color: #ffffff;
-}
-
-.checkbox-activ::before {
-  content: "";
-  position: absolute;
-  bottom: 6px;
-  left: 7px;
-  background-color: #c29974;
-  border-radius: 10px;
-  height: 10px;
-  width: 3px;
-  transform: rotate(-34deg);
-}
-
-.checkbox-activ::after {
-  content: "";
-  position: absolute;
-  bottom: 8px;
-  left: 12px;
-  background-color: #c29974;
-  border-radius: 10px;
-  height: 13px;
-  width: 3px;
-  transform: rotate(21deg);
-}
 
 .form-radio-indicator {
   position: relative;
@@ -143,11 +107,9 @@
   margin-right: 60px;
 }
 
-
 .amount-sort {
   display: flex;
 }
-
 
 .indicator-amount {
   position: relative;
@@ -156,8 +118,8 @@
   background-color: #ffffff;
 }
 
-.amount-activ{
-background-color:#F3D0DB ;
+.amount-activ {
+  background-color: #f3d0db;
 }
 .amount-text1::before {
   position: absolute;
@@ -170,16 +132,16 @@ background-color:#F3D0DB ;
 .amount-text2::before {
   position: absolute;
   left: 24%;
-    top: 20%;
-  
+  top: 20%;
+
   content: "10-20";
 }
 
 .amount-text3::before {
   position: absolute;
   left: 24%;
-    top: 20%;
-  
+  top: 20%;
+
   content: "20-50";
 }
 
@@ -199,8 +161,9 @@ background-color:#F3D0DB ;
 }
 
 .button_apply {
+  margin-top: 36px;
   width: 95px;
-  height: 44px;
+  height: 41px;
 }
 
 .sort {
@@ -230,9 +193,6 @@ background-color:#F3D0DB ;
   margin-bottom: 30px;
 }
 
-.indicator-none {
-  display: none;
-}
 
 .filter-text {
   font-family: "Open Sans", sans-serif;

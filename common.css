@@ -61,10 +61,10 @@ fieldset {
   margin: 0px;
 }
 
-.bread-title{
+.bread-title {
   margin: 0px;
-  margin-bottom: 16px;
- }
+  margin-bottom: 17px;
+}
 
 .breadcrumbs-text {
   font-family: "Crimson Text", serif;
@@ -146,6 +146,48 @@ fieldset {
 
 .button:disabled {
   background-color: #c1c1c1;
+}
+
+.indicator-none {
+  display: none;
+}
+
+.form-checkbox-indicator {
+  display: block;
+  width: 19px;
+  height: 19px;
+  border: 2px solid #c29974;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.checkbox-activ {
+  background-color: #ffffff;
+}
+
+.checkbox-activ::before {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 7px;
+  background-color: #c29974;
+  border-radius: 10px;
+  height: 10px;
+  width: 3px;
+  transform: rotate(-34deg);
+}
+
+.checkbox-activ::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+  background-color: #c29974;
+  border-radius: 10px;
+  height: 13px;
+  width: 3px;
+  transform: rotate(21deg);
 }
 
 /* header */
@@ -363,10 +405,9 @@ fieldset {
   flex-direction: column;
   background-color: #434343;
   margin: 0px auto;
-  margin-top: 53px;
   width: 100%;
   max-width: 1400px;
-  padding: 85px 91px;
+  padding: 100px 110px;
 }
 
 .footer-nav {
@@ -382,16 +423,33 @@ fieldset {
   font-weight: normal;
   line-height: 22px;
   color: #aaaaaa;
+  margin-bottom: 23px;
 }
 
 .footer-list {
-  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.list-end {
+  margin-bottom: 28px;
+}
+
+.design-list-line {
+  position: relative;
+  margin-bottom: 27px;
+}
+
+.design-line::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 380px;
+  background-color: #666666;
 }
 
 .footer-list-line {
   position: relative;
-  padding-top: 23px;
-  padding-bottom: 13px;
+  margin-bottom: 29px;
 }
 
 .footer-line::before {
@@ -404,8 +462,7 @@ fieldset {
 
 .line-long {
   position: relative;
-  padding-top: 28px;
-  padding-bottom: 11px;
+  margin-bottom: 25px;
 }
 
 .footer-line-long::before {
@@ -452,8 +509,7 @@ fieldset {
   list-style-type: none;
   padding-left: 0px;
   margin: 0px;
-  margin-left: 20px;
-  margin-top: 16px;
+  margin-right: 20px;
   width: 380px;
 }
 
@@ -462,10 +518,13 @@ fieldset {
   flex-direction: column;
   flex-wrap: wrap;
   position: relative;
-  margin-left: 20px;
-  margin-top: 16px;
   width: 380px;
   min-height: 243px;
+}
+
+.line-connect {
+  position: relative;
+  margin-bottom: 27px;
 }
 
 .form-input {
@@ -488,14 +547,13 @@ fieldset {
 }
 
 .form-input::placeholder {
-  padding-left: 15px;
+  padding-left: 14px;
   color: #ebebeb;
 }
 
 .input-sub {
   display: flex;
-
-  margin-top: 12px;
+  margin-bottom: 24px;
 }
 
 .button-join {
@@ -508,8 +566,10 @@ fieldset {
 
 .social {
   display: flex;
-
-  margin-top: 25px;
+  list-style-type: none;
+  margin: 0px;
+  padding-left: 0px;
+  margin-bottom: 140px;
 }
 
 .social-list {
@@ -579,18 +639,19 @@ fieldset {
 .design {
   display: flex;
   align-items: center;
-  margin-top: 13px;
 }
 
 .design-title {
   display: block;
-  margin-top: 28px;
   color: #a2a2a2;
 }
 
 .design-name {
-  position: absolute;
-  bottom: 2px;
+  
+  list-style-type: none;
+  margin: 0px;
+  padding-left: 0px;
+  bottom: 0px;
 }
 
 .mb10 {
