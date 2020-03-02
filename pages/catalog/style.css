@@ -1,3 +1,7 @@
+.catalog{
+  margin-bottom: 60px;
+}
+
 .cat-title {
   margin: 0px;
   margin-top: 18px;
@@ -11,14 +15,18 @@
 .prod-list {
   position: relative;
   margin-right: 20px;
-  margin-top: 26px;
-}
+  margin-bottom: 23px;
+  }
 
 .ctg-list {
+  list-style-type: none;
+  padding-left: 0px;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin: 0px;
+  padding-top: 8px;
   margin-right: -10px;
+  margin-bottom: 28px;
 }
 
 .prod-list:nth-child(4n + 4) {
@@ -29,9 +37,9 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-left: 200px;
-  max-width: 680px;
-  margin-top: 50px;
+  max-width: 880px;
+  padding-left: 200px;
+  
 }
 
 .description-info{

@@ -36,9 +36,41 @@
 }
 
 .fieldset-range {
+  position: relative;
+  width: 206px;
   margin: 0px;
   margin-right: 95px;
 }
+
+
+
+.range {
+  position: relative;
+  top: -2px;
+  left: 5px;
+  -webkit-appearance: none;
+  width: 188px;
+  height: 4px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  margin-bottom: 14px;
+}
+
+
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border:8px solid #c29974;
+  border-radius: 20px;
+  background-color:  #FFFFFF;
+  cursor: pointer;
+}
+
+
+
 
 .sort-item {
   position: absolute;
@@ -47,11 +79,6 @@
   width: 100%;
   max-width: 1095px;
   margin: 42px 0px 42px 110px;
-}
-
-.range {
-  margin-bottom: 10px;
-  width: 206px;
 }
 
 .fieldset-checkbox {

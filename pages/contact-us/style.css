@@ -72,11 +72,64 @@
   margin-bottom: 19px;
 }
 
-.popap-consent {
+.popap-consent-label {
   position: relative;
   display: flex;
   margin-bottom: 17px;
   
+}
+
+.popap-checkbox-indicator {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #c29974;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-right: 11px;
+}
+
+.popap-checkbox-indicator:hover{
+  cursor: pointer;
+}
+
+
+
+.popap-input:checked + .popap-checkbox-indicator{
+  background-color: #ffffff;
+}
+
+.popap-input:checked + .popap-checkbox-indicator::before {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    left: 6px;
+    background-color: #c29974;
+    border-radius: 10px;
+    height: 10px;
+    width: 3px;
+    transform: rotate(-34deg);
+} 
+
+.popap-input:checked + .popap-checkbox-indicator::after{
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  left: 11px;
+  background-color: #c29974;
+  border-radius: 10px;
+  height: 13px;
+  width: 3px;
+  transform: rotate(21deg);
+}
+
+.popap-consent-label:hover  .popap-text-consent{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.popap-input:focus ~ .popap-text-consent{
+  text-decoration: underline;
 }
 
 .popap-text-consent {
@@ -87,47 +140,6 @@
   line-height: 16px;
   color: black;
   padding: 3px;
-}
-.popap-consent {
-  display: flex;
-}
-
-.popap-checkbox-indicator {
-  display: block;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #c29974;
-  box-sizing: border-box;
-  border-radius: 3px;
-  margin-right: 10px;
-}
-
-.popap-checkbox-activ {
-  background-color: #ffffff;
-}
-
-.popap-checkbox-activ::before {
-  content: "";
-  position: absolute;
-  bottom: 5px;
-  left: 7px;
-  background-color: #c29974;
-  border-radius: 10px;
-  height: 10px;
-  width: 3px;
-  transform: rotate(-34deg);
-}
-
-.popap-checkbox-activ::after {
-  content: "";
-  position: absolute;
-  bottom: 7px;
-  left: 12px;
-  background-color: #c29974;
-  border-radius: 10px;
-  height: 13px;
-  width: 3px;
-  transform: rotate(21deg);
 }
 
 .popap-submit {

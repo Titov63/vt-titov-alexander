@@ -1,3 +1,7 @@
+.content{
+  margin-bottom: 56px;
+}
+
 /* Poster */
 
 .poster {
@@ -6,12 +10,12 @@
   position: relative;
   padding-top: 68px;
   margin-bottom: 90px;
-
 }
 
 .poster-div_background {
+  position: relative;
   min-height: 372px;
-    background-color: #eee4db;
+  background-color: #eee4db;
 }
 
 .poster-div {
@@ -27,16 +31,16 @@
 .poster-slid {
   display: flex;
   position: absolute;
-  top: 86px;
-  left: 48px;
+  top: 18px;
+  left: 28px;
   display: flex;
   flex-direction: column;
 }
 
 .poster-div_title {
   position: absolute;
-  top: 160px;
-    left: 153px;
+  top: 92px;
+    left: 133px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -46,8 +50,8 @@
 .poster-img {
   position: absolute;
   min-width: 300px;
-  bottom: 37px;
-  left: 465px;
+  bottom: -3px;
+  left: 445px;
   max-width: 635.49px;
 }
 .num {
@@ -78,8 +82,6 @@
   background-color: rgba(30, 6, 6, 0.6);
 }
 
-
-
 .title-poster {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -88,6 +90,7 @@
   line-height: 110%;
   color: #1e0606;
   margin: 0px;
+  margin-bottom: 19px;
 }
 
 .made-in {
@@ -97,19 +100,13 @@
   font-size: 20px;
   line-height: 25px;
   color: #1e0606;
-  margin-top: 19px;
+  margin: 0px;
+  margin-bottom: 19px;
+  
 }
 
 .button-explore {
   width: 161px;
-}
-
-.poster-img {
-  position: absolute;
-  min-width: 300px;
-  bottom: 36px;
-  left: 465px;
-  max-width: 635.49px;
 }
 
 .poster-div {
@@ -124,11 +121,10 @@
 /* Category */
 
 .category {
-  
+  margin-bottom: 90px;
 }
 
-.title-cat{
-
+.title-cat {
   margin-bottom: 20px;
 }
 
@@ -136,21 +132,21 @@
   list-style-type: none;
   padding-left: 0px;
   margin: 0px;
+  margin-right: -10px;
+  margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  
-  margin-right: -10px;
 }
 
 .slid-product {
   display: flex;
-  margin-top: 30px;
   max-width: 680px;
 }
 .slid-info {
   display: flex;
-  margin: 3px 0px 4px;
+  margin: 0px;
+  margin-right: 20px;
 }
 
 .slid {
@@ -167,7 +163,7 @@
   content: "";
   position: absolute;
   top: 2px;
-  left: 17.5px;
+  left: 15.5px;
 
   transform: rotate(45deg);
 
@@ -180,7 +176,7 @@
   content: "";
   position: absolute;
   bottom: 2px;
-  left: 17.5px;
+  left: 15.5px;
   transform: rotate(133deg);
 
   height: 21px;
@@ -209,7 +205,7 @@
   content: "";
   position: absolute;
   bottom: 2px;
-  left: 17.5px;
+  left: 16.5px;
   transform: rotate(-133deg);
 
   height: 21px;
@@ -217,48 +213,46 @@
   background-color: #1e0606;
 }
 
-.marketing-text {
-  margin-left: 20px;
-}
-
 /* info*/
 
 .info {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 80px;
+  margin-bottom: 87px;
 }
 .info-img {
-  margin-top: 7px;
   width: 480px;
   min-width: 300px;
+  margin-right: 120px;
 }
 
 .info-nav {
   display: flex;
   flex-direction: column;
   width: 540px;
-  margin-top: 30px;
-  margin-left: 60px;
+  padding-top: 31px;
+}
+
+.title-info {
+  margin-bottom: 20px;
 }
 
 .info-list {
+  margin: 0px;
+  margin-bottom: 6px;
+  list-style-type: none;
+  padding-left: 0px;
   display: flex;
   flex-direction: column;
-  margin-top: 5px;
 }
 
-.list-category {
-  margin-top: 22px;
+.item-title {
+  position: relative;
+  margin-bottom: 23px;
 }
 
 .info-category {
   display: block;
-  text-indent: 60px;
-  padding-top: 13px;
-  width: 326px;
-  height: 55px;
-
   font-family: "Crimson Text", serif;
   font-style: italic;
   font-weight: normal;
@@ -267,9 +261,8 @@
   color: #1e0606;
 }
 
-.margin-info {
-  margin-left: 60px;
-  margin-top: 10px;
+.info-activ {
+  font-weight: bold;
 }
 
 .info-category_activ {
@@ -278,38 +271,39 @@
 }
 
 .format-info_1 {
-  margin-top: 3px;
-  margin-left: 60px;
+  max-width: 470px;
+  margin-bottom: 15px;
 }
 
 .format-info_2 {
-  margin-top: 15px;
-  margin-left: 60px;
+  max-width: 470px;
+  margin-bottom: 26px;
 }
 
 .button_more {
-  margin-top: 26px;
   width: 149px;
-  margin-left: 60px;
 }
 
 /* sponsors */
 
 .sponsors {
   display: flex;
-  margin-top: 62px;
+  margin-bottom: 89px;
 }
 
 .sponsor-list {
+  list-style-type: none;
+  padding-left: 0px;
   display: flex;
   flex-wrap: wrap;
+  margin: 0px;
+  
+
   width: 100%;
   justify-content: space-between;
   align-items: center;
-}
 
-.sponsor-list_item {
-  margin-top: 10px;
+  
 }
 
 /* about-us_map */
@@ -320,7 +314,7 @@
   position: relative;
   width: 543px;
   padding-left: 30px;
-  margin-top: 72px;
+  
 }
 
 .about-us_map {
@@ -386,7 +380,7 @@
   margin-left: 57px;
   padding-left: 30px;
   width: 543px;
-  margin-top: 72px;
+  
 }
 
 .contacts-text {
