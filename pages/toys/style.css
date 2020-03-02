@@ -66,13 +66,12 @@
   margin-bottom: 15px;
 }
 
-.filter-text {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: #1e0606;
+.form-checkbox-indicator {
+  width: 19px;
+  height: 19px;
+  border: 2px solid #c29974;
+  border-radius: 3px;
+  margin-right: 10px;
 }
 
 .form-checkbox:checked + .form-checkbox-indicator::before {
@@ -103,24 +102,42 @@
   text-decoration: underline;
 }
 
-.form-checkbox-indicator {
-  width: 19px;
-  height: 19px;
-  border: 2px solid #c29974;
-  border-radius: 3px;
-  margin-right: 10px;
+.checkbox-label:hover {
+  cursor: pointer;
 }
 
-.checkbox-cheked {
-  width: 19px;
-  height: 19px;
-  border: 2px solid #c29974;
-  border-radius: 3px;
-  margin-right: 10px;
+.checkbox-label:hover > .filter-text {
+  text-decoration: underline;
+}
+
+.form-checkbox:checked + .form-checkbox-indicator {
   background-color: #ffffff;
 }
 
-.indicator-radio {
+.form-checkbox:disabled ~ .filter-text {
+  color: #908484;
+  text-decoration: none;
+}
+
+.form-checkbox:disabled + .form-checkbox-indicator {
+  border: 2px solid #e1cdba;
+}
+
+.filter-text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1e0606;
+}
+
+.fieldset-radio {
+  margin: 0px;
+  margin-right: 69px;
+}
+
+.radio-label {
   display: flex;
   position: relative;
   margin-bottom: 10px;
@@ -137,7 +154,7 @@
   margin-right: 10px;
 }
 
-.radio-activ::before {
+.input-radio:checked + .form-radio-indicator::before {
   content: "";
   position: absolute;
   background: #c29974;
@@ -149,9 +166,22 @@
   height: 12px;
 }
 
-.fieldset-radio {
-  margin: 0px;
-  margin-right: 69px;
+.input-radio:focus ~ .filter-text {
+  text-decoration: underline;
+}
+
+.input-radio:hover ~ .filter-text {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.input-radio:disabled ~ .filter-text {
+  color: #908484;
+  text-decoration: none;
+}
+
+.input-radio:disabled + .form-radio-indicator {
+  border: 2px solid #e1cdba;
 }
 
 .fieldset-amount {
@@ -165,36 +195,49 @@
 
 .indicator-amount {
   position: relative;
+  display: block;
   width: 80px;
   height: 35px;
   background-color: #ffffff;
 }
 
-.amount-activ {
+.input-amount:checked + .indicator-amount {
   background-color: #f3d0db;
 }
-.amount-text1::before {
+
+.input-amount:focus + .indicator-amount {
+  background-color: #eddeeb;
+}
+
+.amount-label:hover .indicator-amount {
+  background-color: #eddeeb;
+  cursor: pointer;
+}
+
+.amount-label {
+  position: relative;
+}
+
+.num-0-5::before {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   content: "0-5";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.amount-text2::before {
+.num-10-20::before {
   position: absolute;
-  left: 24%;
-  top: 20%;
-
   content: "10-20";
-}
-
-.amount-text3::before {
-  position: absolute;
   left: 24%;
   top: 20%;
+}
 
-  content: "20-50";
+.num-20-50::before {
+  position: absolute;
+  content: "10-20";
+  left: 24%;
+  top: 20%;
 }
 
 .fieldset-title {

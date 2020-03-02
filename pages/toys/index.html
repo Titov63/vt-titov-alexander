@@ -60,46 +60,51 @@
           <legend class="fieldset-title">Color</legend>
 
           <label class="checkbox-label">
-            <input class="form-checkbox hidden " type="checkbox" name="color" value="Black"  checked>
-            <span class="form-checkbox-indicator checkbox-cheked"></span >
-              <span class="filter-text">Black</span> </label>
+            <input di class="form-checkbox hidden " type="checkbox" name="color" value="Black" checked>
+            <span class="form-checkbox-indicator"></span>
+            <span class="filter-text">Black</span> </label>
 
           <label class="checkbox-label">
-            <input class="form-checkbox hidden " type="checkbox" name="color" value="Blue" >
+            <input class="form-checkbox hidden " type="checkbox" name="color" value="Blue">
             <span class="form-checkbox-indicator"></span>
             <span class="filter-text">Blue</span> </label>
 
           <label class="checkbox-label">
-            <input class="form-checkbox hidden " type="checkbox" name="color" value="Green" >
+            <input class="form-checkbox hidden " type="checkbox" name="color" value="Green">
             <span class="form-checkbox-indicator"></span>
             <span class="filter-text">Green</span></label>
 
           <label class="checkbox-label">
-            <input class="form-checkbox hidden " type="checkbox" name="color" value="White" >
+            <input disabled class="form-checkbox hidden " type="checkbox" name="color" value="White">
             <span class="form-checkbox-indicator"></span>
             <span class="filter-text">White</span></label>
         </fieldset>
 
         <fieldset class="fieldset-radio">
           <legend class="fieldset-title">Delivery</legend>
-          <label class="filter-text indicator-radio"><input class="hidden" type="radio" name="delivery" value="Free"
-              >
-            <span class="form-radio-indicator"></span> Free shipping</label>
-          <label class="filter-text indicator-radio"><input class="hidden" type="radio" name="delivery" value="Fast"
-               checked>
-            <span class="form-radio-indicator radio-activ"></span> Fast
-            shipping</label>
+
+          <label class="radio-label"><input disabled class="hidden input-radio" type="radio" name="delivery" value="Free">
+            <span class="form-radio-indicator"></span>
+            <span class="filter-text "> Free shipping</span></label>
+          <label  class=" radio-label"><input class="hidden input-radio" type="radio" name="delivery" value="Fast" checked>
+            <span class="form-radio-indicator"></span>
+            <span class="filter-text">Fast shipping</span>
+          </label>
         </fieldset>
 
         <fieldset class="fieldset-amount">
           <legend class="fieldset-title">Amount</legend>
           <div class="amount-sort">
-            <label class="filter-text indicator-amount amount-text1 amount-activ"><input class="hidden" type="radio" name="amount" value="0-5"
-                 checked></label>
-            <label class="filter-text indicator-amount amount-text2"><input class="hidden" type="radio" name="amount" value="10-20"
-                ></label>
-            <label class="filter-text indicator-amount amount-text3"><input class="hidden" type="radio" name="amount" value="20-50"
-                ></label>
+            <label class="amount-label"><input class="hidden input-amount" type="radio" name="amount" value="0-5"
+                checked>
+              <span class="filter-text  num-0-5 indicator-amount"></span>
+            </label>
+            <label class="amount-label"><input class="hidden input-amount" type="radio" name="amount" value="10-20">
+              <span class="filter-text  num-10-20 indicator-amount"></span>
+            </label>
+            <label class="amount-label"><input class="hidden input-amount" type="radio" name="amount" value="20-50">
+              <span class="filter-text  num-20-50 indicator-amount"></span>
+            </label>
           </div>
         </fieldset>
 
@@ -154,7 +159,7 @@
       <li class="nav-item"><a class="nav-left" href="#"></a></li>
       <li class="num-list">
         <a class="num action-num" href="#">1</a>
-        <a class="num" href="#">2</a>
+        <a class="num num2" href="#">2</a>
         <a class="num" href="#">3</a>
         <a class="num" href="#">4</a>
       </li>
@@ -200,7 +205,7 @@
           <h4 class="footer-title">Customer Information</h4>
         </li>
         <li class="footer-list-line"><span class="footer-line"></span></li>
-        <li class="footer-list"><a href="/pages/contact-us/index.html" class="footer-text" >Contact Us</a></li>
+        <li class="footer-list"><a href="/pages/contact-us/index.html" class="footer-text">Contact Us</a></li>
         <li class="footer-list"><a class="footer-text" href="#">Sale Exclusions</a></li>
         <li class="footer-list"><a class="footer-text" href="#">Shipping & Returns</a></li>
         <li class="footer-list"><a class="footer-text" href="#">Terms & Conditions</a></li>

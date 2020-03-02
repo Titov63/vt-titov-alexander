@@ -136,19 +136,24 @@ fieldset {
   align-items: baseline;
 }
 
-.button:hover {
-  background-color: #c29974;
-}
-
 .button:active {
   background-color: #cfaf91;
 }
 
-.button:disabled {
-  background-color: #c1c1c1;
+button:focus {
+  background-color: #c29974;
+  outline: none;
 }
 
+.button:hover {
+  background-color: #c29974;
+  cursor: pointer;
+}
 
+.button:disabled {
+  color: #E1E1E1;
+  background-color:#C1C1C1 ;
+}
 
 /* header */
 
@@ -607,7 +612,6 @@ fieldset {
 }
 
 .design-name {
-  
   list-style-type: none;
   margin: 0px;
   padding-left: 0px;
@@ -641,12 +645,52 @@ fieldset {
   color: #1e0606;
 }
 
+.num:hover {
+  opacity: 0.5;
+}
+
 .action-num {
   color: #c29974;
 }
 
 .nav-item {
   position: relative;
+}
+
+.nav-left:hover:before {
+  background-color: #c29974;
+}
+
+.nav-left:hover:after {
+  background-color: #c29974;
+}
+
+.nav-right:hover:before {
+  background-color: #c29974;
+}
+
+.nav-right:hover:after {
+  background-color: #c29974;
+}
+
+.nav-left:active:before {
+  background-color: #c29974;
+  opacity: 0.5;
+}
+
+.nav-left:active:after {
+  background-color: #c29974;
+  opacity: 0.5;
+}
+
+.nav-right:active:before {
+  background-color: #c29974;
+  opacity: 0.5;
+}
+
+.nav-right:active:after {
+  background-color: #c29974;
+  opacity: 0.5;
 }
 
 .nav-left::before {
