@@ -1,3 +1,7 @@
+.toy-content {
+  margin-bottom: 62px;
+}
+
 .toy {
   margin-bottom: 48px;
 }
@@ -17,10 +21,8 @@
   position: relative;
   left: -110px;
   top: 0px;
-
   width: 1400px;
   height: 254px;
-
   background-color: rgba(125, 151, 218, 0.2);
 }
 
@@ -29,7 +31,6 @@
   position: absolute;
   top: 0px;
   left: 0px;
-
   width: 1095px;
   height: 170px;
   margin-top: 42px;
@@ -42,8 +43,6 @@
   margin-right: 95px;
 }
 
-
-
 .range {
   position: relative;
   top: -2px;
@@ -53,24 +52,18 @@
   height: 4px;
   outline: none;
   background-color: rgba(0, 0, 0, 0.5);
-
   margin-bottom: 14px;
 }
-
-
 
 .range::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 24px;
   height: 24px;
-  border:8px solid #c29974;
+  border: 8px solid #c29974;
   border-radius: 20px;
-  background-color:  #FFFFFF;
+  background-color: #ffffff;
   cursor: pointer;
 }
-
-
-
 
 .sort-item {
   position: absolute;
@@ -262,7 +255,7 @@
 
 .num-20-50::before {
   position: absolute;
-  content: "10-20";
+  content: "20-50";
   left: 24%;
   top: 20%;
 }
@@ -295,12 +288,7 @@
   list-style-type: none;
   padding-left: 0px;
   margin: 0px;
-}
-
-.sort-href {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-bottom: 31px;
 }
 
 .sort-list {
@@ -311,8 +299,51 @@
   width: 380px;
 }
 
+.sort-href {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .sort-img {
+  display: inline-block;
   margin-bottom: 30px;
+}
+
+.item-img {
+  position: absolute;
+
+  top: 17%;
+  left: 23%;
+
+  width: 207px;
+  height: 207px;
+
+  background-color: #e5eaf8;
+  opacity: 0;
+}
+
+.text-img {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 29px;
+  text-transform: uppercase;
+  padding: 82px 12px 96px 11px;
+
+  color: #1e0606;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.sort-href:hover .item-img {
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+.sort-href:active .item-img {
+  opacity: 0.67;
 }
 
 .sort-text {
@@ -323,6 +354,7 @@
   line-height: 19px;
   text-align: center;
   color: #1e0606;
+  margin-bottom: 16px;
 }
 
 .sort-price {
@@ -332,6 +364,5 @@
   font-size: 16px;
   line-height: 22px;
   color: #1e0606;
-  margin-top: 16px;
-  margin-bottom: 47px;
+  margin-bottom: 46px;
 }

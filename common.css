@@ -43,11 +43,6 @@ fieldset {
   overflow: hidden;
 }
 
-.list-point-none {
-  list-style-type: none;
-  padding-left: 0px;
-}
-
 .title-breadcrumbs {
   display: flex;
   flex-direction: column;
@@ -134,14 +129,6 @@ fieldset {
   border: 0px;
   display: block;
   align-items: baseline;
-}
-
-.button:active {
-  background-color: #cfaf91;
-}
-
-button:focus {
-  background-color: #c29974;
   outline: none;
 }
 
@@ -150,9 +137,17 @@ button:focus {
   cursor: pointer;
 }
 
+.button:focus {
+  background-color: #c29974;
+}
+
+.button:active {
+  background-color: #cfaf91;
+}
+
 .button:disabled {
-  color: #E1E1E1;
-  background-color:#C1C1C1 ;
+  color: #e1e1e1;
+  background-color: #c1c1c1;
 }
 
 /* header */
@@ -194,6 +189,8 @@ button:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  list-style-type: none;
+  padding-left: 0px;
 }
 
 .list-link {
@@ -201,6 +198,8 @@ button:focus {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 134px;
+  list-style-type: none;
+  padding-left: 0px;
 }
 
 .header-link {
@@ -284,7 +283,26 @@ button:focus {
   margin-right: 10px;
 }
 
+.product-list:hover .product-title {
+  text-decoration: underline;
+}
 
+.product-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
 
 .product-item-1 {
   display: flex;
@@ -340,20 +358,8 @@ button:focus {
   height: 270px;
 }
 
-.product-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 32px;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+.focus-product:focus .product-title {
+  text-decoration: underline;
 }
 
 /* footer */
@@ -457,7 +463,6 @@ button:focus {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-
   margin: 0px;
 }
 
@@ -615,18 +620,20 @@ button:focus {
 .mb10 {
   margin-bottom: 10px;
 }
+
 .slider-nav {
   display: block;
   display: flex;
   justify-content: space-between;
   margin: 0px;
-  margin-bottom: 62px;
+  list-style-type: none;
+  padding-left: 0px;
 }
 
 .num-list {
   display: flex;
   justify-content: space-between;
-  width: 232px;
+  width: 231px;
 }
 
 .num {

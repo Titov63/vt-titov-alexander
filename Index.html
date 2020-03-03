@@ -13,26 +13,23 @@
 </head>
 
 <body>
-
   <header class="header container">
     <a><img class="logo" src="/images/logo.svg" alt="logo"></a>
     <nav class="header-nav">
-      <ul class="list-point-none list-links">
+      <ul class=" list-links">
         <li><a class="header-link" href="/pages/blog/index.html">Blog</a></li>
         <li><a class="header-link" href="/pages/catalog/index.html">Catalog</a></li>
         <li><a class="header-link" href="/pages/toys/index.html">Toys</a></li>
       </ul>
-      <ul class="list-point-none list-link">
+      <ul class=" list-link">
         <li><a href="#"><img class="header-search" src="/images/search-icon.svg" alt="search"></a></li>
         <li class="contact-us"><a class="header-link header-link-bold " href="/pages/contact-us/index.html">Contact
             Us</a></li>
       </ul>
     </nav>
   </header>
-
   <main class="content">
     <section class="container poster">
-
       <div class="poster-div_background">
         <div class="poster-slid">
           <span class="num">01</span>
@@ -44,33 +41,31 @@
         <div class="poster-div_title">
           <h2 class="title-poster">THE OOH NOO COLLECTION</h2>
           <p class="made-in">Designed in Slovenia</p>
-          <a class="button button-explore" href="#">EXPLORE NOW</a>
+          <button class="button button-explore button-explore_js" href="#">EXPLORE NOW</button>
         </div>
         <span class="poster-img"><img src="/images/poster.png" alt="image-poster"></span>
       </div>
       <div class="poster-div">
         Free (continental) USA shipping on all orders of $100 USD or more!
       </div>
-
     </section>
     <section class="category container">
       <h2 class="title-h3 title-cat">Category Products</h2>
       <ul class="category-list">
-        <li class="product-list ml0"><a class="product-item-1" href="#"><span class="product-title ">APPAREL KIDS</span>
+        <li class="product-list ml0"><a class="product-item-1 focus-product" href="#"><span
+              class="product-title ">APPAREL KIDS</span>
           </a></li>
-
-        <li class="product-list"><a class="product-item-2" href="#"><span class="product-title ">HOLIDAY SHOP</span>
+        <li class="product-list"><a class="product-item-2 focus-product" href="#"><span class="product-title ">HOLIDAY
+              SHOP</span>
           </a></li>
-
-        <li class="product-list"><a class="product-item-3" href="/pages/toys/index.html"><span
+        <li class="product-list"><a class="product-item-3 focus-product" href="/pages/toys/index.html"><span
               class="product-title ">TOYS</span> </a></li>
-
-        <li class="product-list"><a class="product-item-4" href="#"><span class="product-title ">ACCESSORIES</span> </a>
+        <li class="product-list"><a class="product-item-4 focus-product" href="#"><span
+              class="product-title ">ACCESSORIES</span> </a>
         </li>
-
       </ul>
       <div class="slid-product ">
-        <ul class="list-point-none slid-info">
+        <ul class=" slid-info">
           <li><button class="slid left"></button></li>
           <li><button class="slid right"></button></li>
         </ul>
@@ -81,13 +76,13 @@
       </div>
     </section>
     <section class="info container">
-      <div  class="info-img">
+      <div class="info-img">
         <img src="/images/delivery.jpg" alt="image">
       </div>
       <div class="info-nav">
         <h2 class="title-h3 title-info">Delivery</h2>
         <ul class="info-list">
-          <li class="item-title"><a class="info-category info-activ" href="#">Delivery </a></li>
+          <li class="item-title"><a class="info-category info-category_activ" href="#">Delivery </a></li>
           <li class="item-title"><a class="info-category" href="#">Guarantee </a></li>
           <li class="item-title"><a class="info-category" href="#">Credit </span></a></li>
         </ul>
@@ -107,24 +102,22 @@
     <section class="sponsors container">
       <h2 class="hidden">h</h2>
       <ul class=" sponsor-list">
-        <li class="sponsor-list_item"><a href="#">
+        <li class="sponsor-list_item"><a href="https://corp.mail.ru/ru/">
             <img src="/images/mail.png" alt="mail-group">
           </a></li>
-        <li class="sponsor-list_item"><a href="#">
+        <li class="sponsor-list_item"><a href="https://www.apple.com/ru/">
             <img src="/images/apple.png" alt="Aplle">
           </a></li>
-        <li class="sponsor-list_item"><a href="#">
+        <li class="sponsor-list_item"><a href="https://eltex-co.ru/">
             <img src="/images/eltex.png" alt="ELTEX">
           </a></li>
-        <li class="sponsor-list_item"><a href="#">
+        <li class="sponsor-list_item"><a href="https://www.owox.ru/">
             <img src="/images/owox.png" alt="OWOX">
           </a></li>
       </ul>
     </section>
     <section class="about-us_map container">
       <h2 class="hidden">h</h2>
-
-
       <article class="about-us ">
         <div class="background-about_us"></div>
         <div class="index-z2">
@@ -137,11 +130,9 @@
           </p>
           <a class=" button button_buy" href="#">buy now</a>
         </div>
-
       </article>
       <article class="contacts">
         <div class="background-map"></div>
-
         <div class="index-z2">
           <h2 class="title-h3">Contacts</h2>
           <p class="text-info contacts-text">
@@ -153,7 +144,6 @@
             <img src="/images/map-contact.png" alt="Map-contact">
           </a>
         </div>
-
       </article>
     </section>
   </main>
@@ -187,7 +177,6 @@
             </div>
             <span class="footer-text company-rat">Company Rating</span>
           </div>
-
         </li>
       </ul>
       <ul class="footer-col">
@@ -209,12 +198,10 @@
       <div class="connect">
         <h4 class="footer-title">Connect</h4>
         <div class="line-connect"><span class=" footer-line"></span></div>
-
         <form class="input-sub" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
           <input class="form-input" type="email" name="email" id="form-input" placeholder="Email">
           <button type="submit" class="button button-join">Join</button>
         </form>
-
         <ul class="social">
           <li class="social-list"><a href="https://www.facebook.com/">
               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -255,7 +242,6 @@
                   d="M15 7C12.8273 7 12.5549 7.0092 11.7016 7.04813C10.8501 7.08697 10.2686 7.22223 9.7597 7.42C9.23363 7.62443 8.7875 7.89797 8.3427 8.3427C7.89797 8.7875 7.62443 9.23363 7.42 9.7597C7.22223 10.2686 7.08697 10.8501 7.04813 11.7016C7.0092 12.5549 7 12.8273 7 15C7 17.1727 7.0092 17.4451 7.04813 18.2984C7.08697 19.1499 7.22223 19.7314 7.42 20.2403C7.62443 20.7664 7.89797 21.2125 8.3427 21.6573C8.7875 22.102 9.23363 22.3756 9.7597 22.58C10.2686 22.7778 10.8501 22.913 11.7016 22.9519C12.5549 22.9908 12.8273 23 15 23C17.1727 23 17.4451 22.9908 18.2984 22.9519C19.1499 22.913 19.7314 22.7778 20.2403 22.58C20.7664 22.3756 21.2125 22.102 21.6573 21.6573C22.102 21.2125 22.3756 20.7664 22.58 20.2403C22.7778 19.7314 22.913 19.1499 22.9519 18.2984C22.9908 17.4451 23 17.1727 23 15C23 12.8273 22.9908 12.5549 22.9519 11.7016C22.913 10.8501 22.7778 10.2686 22.58 9.7597C22.3756 9.23363 22.102 8.7875 21.6573 8.3427C21.2125 7.89797 20.7664 7.62443 20.2403 7.42C19.7314 7.22223 19.1499 7.08697 18.2984 7.04813C17.4451 7.0092 17.1727 7 15 7ZM15 8.44143C17.1361 8.44143 17.3891 8.4496 18.2327 8.4881C19.0127 8.52367 19.4363 8.65397 19.7182 8.76353C20.0916 8.90867 20.3581 9.08203 20.638 9.362C20.918 9.6419 21.0913 9.9084 21.2365 10.2818C21.346 10.5637 21.4763 10.9873 21.5119 11.7673C21.5504 12.6109 21.5586 12.8639 21.5586 15C21.5586 17.1361 21.5504 17.3891 21.5119 18.2327C21.4763 19.0127 21.346 19.4363 21.2365 19.7182C21.0913 20.0916 20.918 20.3581 20.638 20.638C20.3581 20.918 20.0916 21.0913 19.7182 21.2365C19.4363 21.346 19.0127 21.4763 18.2327 21.5119C17.3892 21.5504 17.1363 21.5586 15 21.5586C12.8637 21.5586 12.6108 21.5504 11.7673 21.5119C10.9873 21.4763 10.5637 21.346 10.2818 21.2365C9.9084 21.0913 9.64193 20.918 9.36197 20.638C9.08207 20.3581 8.90867 20.0916 8.76353 19.7182C8.65397 19.4363 8.52367 19.0127 8.4881 18.2327C8.4496 17.3891 8.44143 17.1361 8.44143 15C8.44143 12.8639 8.4496 12.6109 8.4881 11.7673C8.52367 10.9873 8.65397 10.5637 8.76353 10.2818C8.90867 9.9084 9.08203 9.6419 9.36197 9.362C9.64193 9.08203 9.9084 8.90867 10.2818 8.76353C10.5637 8.65397 10.9873 8.52367 11.7673 8.4881C12.6109 8.4496 12.8639 8.44143 15 8.44143ZM10.8919 15C10.8919 12.7311 12.7311 10.8919 15 10.8919C17.2689 10.8919 19.1081 12.7311 19.1081 15C19.1081 17.2689 17.2689 19.1081 15 19.1081C12.7311 19.1081 10.8919 17.2689 10.8919 15ZM15 17.6667C13.5272 17.6667 12.3333 16.4728 12.3333 15C12.3333 13.5272 13.5272 12.3333 15 12.3333C16.4728 12.3333 17.6667 13.5272 17.6667 15C17.6667 16.4728 16.4728 17.6667 15 17.6667ZM19.2704 11.6896C19.8006 11.6896 20.2304 11.2598 20.2304 10.7296C20.2304 10.1994 19.8006 9.76957 19.2704 9.76957C18.7402 9.76957 18.3104 10.1994 18.3104 10.7296C18.3104 11.2598 18.7402 11.6896 19.2704 11.6896Z"
                   fill="white" />
               </svg>
-
             </a></li>
         </ul>
         <ul class="design-name">
@@ -264,11 +250,11 @@
         </ul>
       </div>
   </footer>
-  <div class="modal-background close ">
+  <div class="modal-background modal-background_js modal-close  ">
     <form class="modal-window" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
       <label class="modal-label">
         <span class="lable-text">Name</span>
-        <input class="long-input" type="text" name="name">
+        <input class="long-input long-input_js" type="text" name="name">
       </label>
       <div class="data">
         <label class="modal-label-short">
@@ -291,12 +277,14 @@
           processing of your personal data</span>
       </label>
       <button class="modal-submit" type="submit">Submit</button>
-
-      <label class="modal-close">
-        <button class="hidden button-close" type="button"></button>+</label>
-
+      
+        <button class="modal-close-button modal-close-button_js" type="button"> </button>
+        
+      
+        
     </form>
   </div>
+  <script src="/script.js"></script>
 </body>
 
 </html>

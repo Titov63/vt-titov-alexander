@@ -16,20 +16,19 @@
   <header class="header container">
     <a href="/index.html"><img class="logo" src="/images/logo.svg" alt="logo"></a>
     <nav class="header-nav">
-      <ul class="list-point-none list-links">
+      <ul class=" list-links">
         <li><a class="header-link" href="/pages/blog/index.html">Blog</a></li>
         <li><a class="header-link" href="/pages/catalog/index.html">Catalog</a></li>
         <li><a class="header-link">Toys</a></li>
       </ul>
-      <ul class="list-point-none list-link">
+      <ul class=" list-link">
         <li><a href="#"><img class="header-search" src="/images/search-icon.svg" alt="search"></a></li>
         <li class="contact-us"><a class="header-link header-link-bold " href="/pages/contact-us/index.html">Contact
             Us</a></li>
       </ul>
     </nav>
   </header>
-  <main class="container">
-
+  <main class="container toy-content">
     <div class="title-breadcrumbs toy">
       <h2 class="title-h2 bread-title">Toy for kids</h2>
       <ul class=" breadcrumbs">
@@ -43,9 +42,7 @@
     <section class="filtr">
       <h1 class="hidden">Hidden</h1>
       <div class="background-filtr"></div>
-
       <form class="filtr-form" action="https://form-data-dl.herokuapp.com/api/messages" method="GET" class="sort-item">
-
         <fieldset class="fieldset-range">
           <legend class="fieldset-title">Cost</legend>
           <input class="range" type="range" name="cost" id="form-range" min="0" max="500" value="105">
@@ -53,9 +50,7 @@
             <span class="filter-text">0</span>
             <span class="filter-text">500</span>
           </div>
-
         </fieldset>
-
         <fieldset class="fieldset-checkbox">
           <legend class="fieldset-title">Color</legend>
 
@@ -79,12 +74,10 @@
             <span class="form-checkbox-indicator"></span>
             <span class="filter-text">White</span></label>
         </fieldset>
-
         <fieldset class="fieldset-radio">
           <legend class="fieldset-title">Delivery</legend>
 
-          <label class="radio-label"><input class="hidden input-radio" type="radio" name="delivery"
-              value="Free">
+          <label class="radio-label"><input class="hidden input-radio" type="radio" name="delivery" value="Free">
             <span class="form-radio-indicator"></span>
             <span class="filter-text "> Free shipping</span></label>
           <label class=" radio-label"><input class="hidden input-radio" type="radio" name="delivery" value="Fast"
@@ -93,7 +86,6 @@
             <span class="filter-text">Fast shipping</span>
           </label>
         </fieldset>
-
         <fieldset class="fieldset-amount">
           <legend class="fieldset-title">Amount</legend>
           <div class="amount-sort">
@@ -109,17 +101,16 @@
             </label>
           </div>
         </fieldset>
-
         <button type="submit" class="button button_apply">Apply</button>
       </form>
-
     </section>
     <section class="sort-list">
       <h2 class="hidden">Hidden</h2>
-      <ul class="list-point-none sort">
+      <ul class=" sort">
         <li class="item-sort">
           <a class="sort-href" href="#">
             <img class="sort-img" src="/images/sharky.png" alt="SHARKY BEAN BAG CHAIR COVER">
+            <div class="item-img text-img">LEARN MORE</div>
             <span class="sort-text">SHARKY BEAN BAG CHAIR COVER</span>
             <span class="sort-price">$60.00 USD</span>
           </a>
@@ -127,47 +118,51 @@
         <li class="item-sort">
           <a class="sort-href" href="#">
             <img class="sort-img" src="/images/brass.png" alt="BRASS DECO FRAMES">
+            <div class="item-img text-img">LEARN MORE</div>
             <span class="sort-text">BRASS DECO FRAMES</span>
             <span class="sort-price">$66.00 USD</span>
           </a>
         </li>
         <li class="item-sort"><a class="sort-href" href="#">
             <img class="sort-img" src="/images/cibo.png" alt="CIBO FULL APRON">
+            <div class="item-img text-img">LEARN MORE</div>
             <span class="sort-text">CIBO FULL APRON</span>
             <span class="sort-price">$60.00 USD</span>
           </a>
         </li>
         <li class="item-sort"><a class="sort-href" href="#">
             <img class="sort-img" src="/images/gumball-machine.png" alt="GATCHA GATCHA GUMBALL MACHINE">
+            <div class="item-img text-img">LEARN MORE</div>
             <span class="sort-text">GATCHA GATCHA GUMBALL MACHINE</span>
             <span class="sort-price">$56.00 USD</span>
           </a>
         </li>
         <li class="item-sort"><a class="sort-href" href="#">
             <img class="sort-img" src="/images/candle.png" alt="CHRISTMAS ADVENT SCENTED CANDLE">
+            <div class="item-img text-img">LEARN MORE</div>
             <span class="sort-text">CHRISTMAS ADVENT SCENTED CANDLE</span>
             <span class="sort-price">$29.00 USD</span>
           </a>
         </li>
         <li class="item-sort"><a class="sort-href" href="#">
             <img class="sort-img" src="/images/tangle.png" alt="TANGLE SPINNING TEA LIGHT">
+            <div class="item-img text-img">LEARN MORE</div>
             <span class="sort-text">TANGLE SPINNING TEA LIGHT</span>
             <span class="sort-price">$56.00 USD</span>
           </a>
         </li>
       </ul>
+      <ul class=" slider-nav">
+        <li class="nav-item"><a class="nav-left" href="#"></a></li>
+        <li class="num-list">
+          <a class="num action-num" href="#">1</a>
+          <a class="num num2" href="#">2</a>
+          <a class="num" href="#">3</a>
+          <a class="num" href="#">4</a>
+        </li>
+        <li class="nav-item"><a class="nav-right" href="#"></a></li>
+      </ul>
     </section>
-    <ul class="list-point-none slider-nav">
-      <li class="nav-item"><a class="nav-left" href="#"></a></li>
-      <li class="num-list">
-        <a class="num action-num" href="#">1</a>
-        <a class="num num2" href="#">2</a>
-        <a class="num" href="#">3</a>
-        <a class="num" href="#">4</a>
-      </li>
-      <li class="nav-item"><a class="nav-right" href="#"></a></li>
-    </ul>
-
   </main>
   <footer class="footer">
     <div class="footer-nav">
