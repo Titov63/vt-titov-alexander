@@ -378,6 +378,7 @@ fieldset {
 .footer-nav {
   display: flex;
   flex-wrap: wrap-reverse;
+  margin-right: -20px;
 }
 
 .footer-title {
@@ -416,6 +417,8 @@ fieldset {
   position: relative;
   margin-bottom: 29px;
 }
+
+
 
 .footer-line::before {
   content: "";
@@ -456,15 +459,7 @@ fieldset {
   opacity: 0.2;
 }
 
-.copyright {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-  margin: 0px;
-}
+
 
 .footer-col {
   display: flex;
@@ -477,18 +472,8 @@ fieldset {
   width: 380px;
 }
 
-.connect {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  position: relative;
-  width: 380px;
-  min-height: 243px;
-}
-
-.line-connect {
-  position: relative;
-  margin-bottom: 27px;
+.line-connect{
+margin-bottom: 26px;
 }
 
 .form-input {
@@ -517,7 +502,7 @@ fieldset {
 
 .input-sub {
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .button-join {
@@ -548,11 +533,12 @@ fieldset {
   opacity: 0.2;
 }
 
-.develop {
-  display: flex;
-  align-items: center;
-  margin-top: -2px;
+.down-block{
+display: flex;
+padding-top: 23px;
+border-top: 1px solid #666666;
 }
+
 
 /* rating */
 
@@ -560,21 +546,37 @@ fieldset {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
+
+  margin-right: 150px;
+  
+
+  
+}
+
+.rating-text{
+  
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  margin: 0px;
 }
 
 .rating-area {
   margin-left: 28px;
-  margin-top: 3px;
+  margin-top: 5px;
 }
 
 .rating-area:hover + .company-rat {
   color: #c29974;
 }
 
-.rating-area:checked ~ label + .company-rat {
+.rating-area:focus ~.company-rat {
   color: #c29974;
-}
-
+   }
+  
 .rating-area:not(:checked) > input {
   display: none;
 }
@@ -600,14 +602,29 @@ fieldset {
   background-repeat: no-repeat;
 }
 
+.copyright {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  margin: 0px;
+}
+
 .design {
   display: flex;
-  align-items: center;
+  margin-right: 110px;
 }
 
 .design-title {
   display: block;
   color: #a2a2a2;
+  margin-top: 2px;
+}
+
+.design-title:hover{
+  opacity: 0.75;
 }
 
 .design-name {
@@ -615,10 +632,6 @@ fieldset {
   margin: 0px;
   padding-left: 0px;
   bottom: 0px;
-}
-
-.mb10 {
-  margin-bottom: 10px;
 }
 
 .slider-nav {
