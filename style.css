@@ -143,6 +143,7 @@
   display: flex;
   max-width: 680px;
 }
+
 .slid-info {
   list-style-type: none;
   padding-left: 0px;
@@ -159,6 +160,10 @@
   border: 0px;
   padding: 0px;
   background-color: rgba(112, 187, 220, 0.2);
+}
+
+.slid:hover{
+  cursor: pointer;
 }
 
 .left::before {
