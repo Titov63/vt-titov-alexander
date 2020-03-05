@@ -26,15 +26,3 @@ window.addEventListener("keydown", function(event) {
     }, 400);
   }
 });
-
-function range(){
-	var
-	val = $('.range').val();
-	$('.range').css({'background':'-webkit-linear-gradient(left ,#C29974 0%,#C29974 '+val+'%, rgba(0, 0, 0, 0.5) '+val+'%, rgba(0, 0, 0, 0.5) 100%)'});
- }
-
-
- window.onload=function(range) {
-   range
-   
- }
