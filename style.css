@@ -455,7 +455,7 @@
 
 .long-input {
   margin: 0px;
-  padding: 0px;
+  padding: 0px 20px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
@@ -464,7 +464,7 @@
 
 .short-input {
   margin: 0px;
-  padding: 0px;
+  padding: 0px 20px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
@@ -488,6 +488,7 @@
   box-sizing: border-box;
   width: 600px;
   height: 150px;
+  padding: 10px 20px;
   resize: none;
 }
 
@@ -536,31 +537,13 @@
 }
 
 .modal-checkbox:checked + .modal-checkbox-indicator::before {
-  content: "";
   position: absolute;
-  bottom: 2px;
-  left: 5px;
-  background-color: #c29974;
-  border-radius: 10px;
-  height: 10px;
-  width: 3px;
-  transform: rotate(-34deg);
-}
-
-.modal-checkbox:checked + .modal-checkbox-indicator::after {
   content: "";
-  position: absolute;
-  bottom: 3px;
-  left: 10px;
-  background-color: #c29974;
-  border-radius: 10px;
-  height: 13px;
-  width: 3px;
-  transform: rotate(21deg);
-}
-
-.modal-checkbox:checked + .modal-checkbox-indicator {
-  background-color: #ffffff;
+  top: -2px;
+  right: 0px;
+background-image: url(/images/vector.png);
+  width: 14.23px;
+height: 14.64px;
 }
 
 .modal-checkbox:focus ~ .text-consent {

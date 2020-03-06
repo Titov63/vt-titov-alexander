@@ -18,6 +18,10 @@
   margin-bottom: 23px;
 }
 
+.prod-list:hover .product-title {
+  text-decoration: underline;
+}
+
 .ctg-list {
   list-style-type: none;
   padding-left: 0px;
@@ -39,6 +43,10 @@
   flex-wrap: wrap;
   max-width: 880px;
   padding-left: 200px;
+}
+
+.mb10{
+  margin-bottom: 10px;
 }
 
 .description-info {

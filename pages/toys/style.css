@@ -89,12 +89,24 @@
 }
 
 .form-checkbox-indicator {
+  position: relative;
   width: 19px;
   height: 19px;
   border: 2px solid #c29974;
   border-radius: 3px;
   margin-right: 10px;
 }
+
+.form-checkbox:checked + .form-checkbox-indicator::before {
+  position: absolute;
+  content: "";
+  top: -2px;
+  right: 0px;
+background-image: url(/images/vector.png);
+  width: 14.23px;
+height: 14.64px;
+}
+/*
 
 .form-checkbox:checked + .form-checkbox-indicator::before {
   content: "";
@@ -119,6 +131,8 @@
   width: 3px;
   transform: rotate(21deg);
 }
+
+*/
 
 .form-checkbox:focus ~ .filter-text {
   text-decoration: underline;
