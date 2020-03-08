@@ -154,7 +154,7 @@ fieldset {
   background-color: #c1c1c1;
 }
 
-input:hover {
+input:not(.range):hover {
   border: 2px solid rgba(0, 0, 0, 0.3);
 }
 

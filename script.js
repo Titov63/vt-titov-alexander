@@ -2,7 +2,7 @@ var modal = document.querySelector(".modal-background_js");
 var buttonOpen = document.querySelector(".button-explore_js");
 var modalClose = document.querySelector(".modal-close-button_js");
 var input = document.querySelector(".long-input_js");
-var range = document.querySelector(".range_js")
+
 
 buttonOpen.addEventListener("click", function() {
   setTimeout(() => {
