@@ -4,6 +4,13 @@ var modalClose = document.querySelector(".modal-close-button_js");
 var input = document.querySelector(".long-input_js");
 
 
+function r() {
+  var val = document.getElementById("rng").value;
+  console.log(val);
+  
+};
+
+
 buttonOpen.addEventListener("click", function() {
   setTimeout(() => {
     modal.classList.toggle("modal-close");
@@ -26,3 +33,5 @@ window.addEventListener("keydown", function(event) {
     }, 400);
   }
 });
+
+

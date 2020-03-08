@@ -45,7 +45,7 @@
       <form class="filtr-form" action="https://form-data-dl.herokuapp.com/api/messages" method="GET">
         <fieldset class="fieldset-range">
           <legend class="fieldset-title">Cost</legend>
-          <input class="range range_js" type="range" name="cost" min="0" max="500" value="105">
+          <input class="range" type="range" id="rng" min="0" max="500" value="105" oninput="r()">
           <div class="range-num">
             <span class="filter-text">0</span>
             <span class="filter-text">500</span>
