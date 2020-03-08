@@ -71,7 +71,7 @@ fieldset {
   margin-right: 25px;
 }
 
-.hover-text:hover{
+.hover-text:hover {
   opacity: 0.75;
 }
 
@@ -549,40 +549,21 @@ textarea:hover {
 
 /* rating */
 
-.rating {
+.rating-area {
   display: flex;
+  align-items: center;
   flex-direction: row-reverse;
-  justify-content: flex-end;
-
   margin-right: 150px;
 }
 
-.rating-text {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-  margin: 0px;
-}
-
-.rating-area {
-  margin-left: 28px;
-  margin-top: 5px;
-}
-
-.rating-area:hover + .company-rat {
+.rating-area input:checked ~ p{
   color: #c29974;
 }
 
-.rating-area:focus ~ .company-rat {
+.rating-area input:hover ~ p{
   color: #c29974;
 }
 
-.rating-area:not(:checked) > input {
-  display: none;
-}
 .rating-area:not(:checked) > label {
   background-image: url(/images/Star-white.png);
   background-repeat: no-repeat;
@@ -592,6 +573,7 @@ textarea:hover {
   padding: 0;
   cursor: pointer;
   margin-right: 3.88px;
+  margin-top: 4px;
 }
 
 .rating-area > input:checked ~ label {
@@ -603,6 +585,17 @@ textarea:hover {
 .rating-area:not(:checked) > label:hover ~ label {
   background-image: url(/images/Star-gold.png);
   background-repeat: no-repeat;
+}
+
+.rating-text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  margin: 0px;
+  margin-right: 28px;
 }
 
 .copyright {
