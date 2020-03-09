@@ -22,14 +22,14 @@
   margin-bottom: 16px;
 }
 
-.blog-article:hover .blog-title {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
 .blog-href {
   display: block;
   margin-bottom: 15px;
+}
+
+.blog-href:hover .blog-title {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .blog-img {

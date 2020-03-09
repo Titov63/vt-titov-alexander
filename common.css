@@ -154,7 +154,7 @@ fieldset {
   background-color: #c1c1c1;
 }
 
-input:not(.range):hover {
+input:not(.range .form-input):hover {
   border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
@@ -176,6 +176,12 @@ textarea:hover {
 }
 
 .logo {
+  width: 100px;
+  min-width: 100px;
+  height: 52px;
+}
+
+.index-logo{
   width: 100px;
   min-width: 100px;
   height: 52px;
@@ -316,56 +322,10 @@ textarea:hover {
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
 }
 
-.product-item-1 {
+.product-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/images/kids.jpg);
-  width: 280px;
-  height: 270px;
-}
-
-.product-item-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(/images/shop.jpg);
-  width: 280px;
-  height: 270px;
-}
-
-.product-item-3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(/images/toys.jpg);
-  width: 280px;
-  height: 270px;
-}
-
-.product-item-4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(/images/accessories.jpg);
-  width: 280px;
-  height: 270px;
-}
-
-.product-item-5 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(/images/sale.jpg);
-  width: 280px;
-  height: 270px;
-}
-
-.product-item-6 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(/images/adults.jpg);
   width: 280px;
   height: 270px;
 }
@@ -631,7 +591,6 @@ textarea:hover {
 }
 
 .slider-nav {
-  display: block;
   display: flex;
   justify-content: space-between;
   margin: 0px;
@@ -708,5 +667,9 @@ textarea:hover {
 }
 
 .nav-right:active {
+  opacity: 0.5;
+}
+
+.active-page{
   opacity: 0.5;
 }

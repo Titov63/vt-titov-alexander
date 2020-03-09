@@ -3,13 +3,11 @@ var buttonOpen = document.querySelector(".button-explore_js");
 var modalClose = document.querySelector(".modal-close-button_js");
 var input = document.querySelector(".long-input_js");
 
-
 function r() {
   var val = document.getElementById("rng").value;
-  console.log(val);
-  
-};
-
+  val = (val * 90) / 500;
+  document.getElementById("range-bg").style.width = val + "%";
+}
 
 buttonOpen.addEventListener("click", function() {
   setTimeout(() => {
@@ -33,5 +31,3 @@ window.addEventListener("keydown", function(event) {
     }, 400);
   }
 });
-
-
