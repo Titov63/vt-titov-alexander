@@ -9,8 +9,8 @@
 }
 
 .title {
-  margin: 0px;
-  margin-top: 18px;
+  margin:18px 0px 0px 0px;
+  
 }
 
 .bread-contact-us {
@@ -46,10 +46,18 @@
   padding: 0px 20px;
 }
 
+.popap-long-input:hover{
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
 .popap-short-input {
   width: 290px;
   height: 50px;
   padding: 0px 20px;
+}
+
+.popap-short-input:hover{
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .popap-lable-text {
@@ -152,8 +160,8 @@ height: 14.64px;
   font-size: 16px;
   line-height: 22px;
   color: #1e0606;
-  margin: 0px;
-  margin-bottom: 19px;
+  margin: 0px 0px 19px 0px;
+  
 }
 
 .c-us-info {

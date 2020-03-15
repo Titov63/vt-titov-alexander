@@ -99,8 +99,7 @@
   font-size: 20px;
   line-height: 25px;
   color: #1e0606;
-  margin: 0px;
-  margin-bottom: 19px;
+  margin: 0px 0px 19px 0px;
 }
 
 .button-explore {
@@ -177,6 +176,10 @@
   opacity: 0.75;
 }
 
+.slid-left:focus {
+  opacity: 0.75;
+}
+
 .slid-right {
   position: relative;
   width: 37px;
@@ -204,6 +207,10 @@
 
 .slid-right:hover {
   cursor: pointer;
+  opacity: 0.75;
+}
+
+.slid-right:focus {
   opacity: 0.75;
 }
 
@@ -358,8 +365,7 @@
   font-size: 26px;
   line-height: 32px;
   color: #1e0606;
-  margin: 0px;
-  margin-bottom: 10px;
+  margin: 0px 0px 10px 0px;
 }
 
 .about-text {
@@ -392,8 +398,7 @@
   line-height: 46px;
   text-transform: uppercase;
   color: #1e0606;
-  margin: 0px;
-  margin-bottom: 20px;
+  margin: 0px 0px 20px 0px;
 }
 
 .contacts-text {

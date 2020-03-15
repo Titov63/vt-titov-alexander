@@ -181,7 +181,7 @@ textarea:hover {
   height: 52px;
 }
 
-.index-logo{
+.index-logo {
   width: 100px;
   min-width: 100px;
   height: 52px;
@@ -354,14 +354,13 @@ textarea:hover {
 }
 
 .footer-title {
-  margin: 0px;
+  margin: 0px 0px 23px 0px;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: normal;
   line-height: 22px;
   color: #aaaaaa;
-  margin-bottom: 23px;
 }
 
 .footer-list {
@@ -435,8 +434,7 @@ textarea:hover {
   flex-wrap: wrap;
   list-style-type: none;
   padding-left: 0px;
-  margin: 0px;
-  margin-right: 20px;
+  margin: 0px 20px 0px 0px;
   width: 380px;
 }
 
@@ -484,9 +482,9 @@ textarea:hover {
 .social {
   display: flex;
   list-style-type: none;
-  margin: 0px;
+  margin: 0px 0px 140px 0px;
   padding-left: 0px;
-  margin-bottom: 140px;
+  
 }
 
 .social-list {
@@ -516,11 +514,11 @@ textarea:hover {
   margin-right: 150px;
 }
 
-.rating-area input:checked ~ p{
+.rating-area input:checked ~ p {
   color: #c29974;
 }
 
-.rating-area input:hover ~ p{
+.rating-area input:hover ~ p {
   color: #c29974;
 }
 
@@ -554,8 +552,8 @@ textarea:hover {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-  margin: 0px;
-  margin-right: 28px;
+  margin: 0px 28px 0px 0px;
+  
 }
 
 .copyright {
@@ -644,6 +642,12 @@ textarea:hover {
   border-left: 4px solid #c29974;
 }
 
+.nav-left:focus::before {
+  border-top: 4px solid #c29974;
+  border-left: 4px solid #c29974;
+  opacity: 0.75;
+}
+
 .nav-left:active::before {
   opacity: 0.5;
 }
@@ -666,10 +670,16 @@ textarea:hover {
   border-right: 4px solid #c29974;
 }
 
+.nav-right:focus::before {
+  border-top: 4px solid #c29974;
+  border-right: 4px solid #c29974;
+  opacity: 0.75;
+}
+
 .nav-right:active {
   opacity: 0.5;
 }
 
-.active-page{
+.active-page {
   opacity: 0.5;
 }

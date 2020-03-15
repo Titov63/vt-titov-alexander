@@ -40,8 +40,7 @@
 .fieldset-range {
   position: relative;
   width: 188px;
-  margin: 0px;
-  margin-right: 113px;
+  margin: 0px 113px 0px 0px;
 }
 
 .range {
@@ -100,8 +99,7 @@
 
 .fieldset-checkbox {
   display: flex;
-  margin: 0px;
-  margin-right: 124px;
+  margin: 0px 124px 0px 0px;
 }
 
 .checkbox-label {
@@ -164,8 +162,7 @@
 }
 
 .fieldset-radio {
-  margin: 0px;
-  margin-right: 69px;
+  margin: 0px 69px 0px 0px;
 }
 
 .radio-label {
@@ -216,8 +213,7 @@
 }
 
 .fieldset-amount {
-  margin: 0px;
-  margin-right: 60px;
+  margin: 0px 60px 0px 0px;
 }
 
 .amount-sort {
@@ -293,8 +289,7 @@
   justify-content: space-between;
   list-style-type: none;
   padding-left: 0px;
-  margin: 0px;
-  margin-bottom: 31px;
+  margin: 0px 0px 31px 0px;
 }
 
 .sort-list {
