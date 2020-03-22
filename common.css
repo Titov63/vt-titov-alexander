@@ -252,12 +252,6 @@ textarea:hover {
   margin: 0px;
 }
 
-.list-contact {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 /* title */
 
 .title-h3 {
